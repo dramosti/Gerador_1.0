@@ -1,0 +1,28 @@
+C:\Users\Andre.HLP\Desktop\AppStoredProcedureGenerator\DAO\bin\Debug\DAO.dll
+C:\Users\Andre.HLP\Desktop\AppStoredProcedureGenerator\DAO\bin\Debug\DAO.pdb
+C:\Users\Andre.HLP\Desktop\AppStoredProcedureGenerator\DAO\obj\Debug\DAO.dll
+C:\Users\Andre.HLP\Desktop\AppStoredProcedureGenerator\DAO\obj\Debug\DAO.pdb
+C:\Users\Andre.HLP\Desktop\AppStoredProcedureGenerator\DAO\obj\Debug\DAO.csprojResolveAssemblyReference.cache
+C:\Users\Andre.HLP\Desktop\AppStoredProcedureGenerator\DAO\bin\Debug\Model.dll
+C:\Users\Andre.HLP\Desktop\AppStoredProcedureGenerator\DAO\bin\Debug\Model.pdb
+C:\Users\Mario\Desktop\AppStoredProcedureGenerator\DAO\bin\Debug\DAO.dll
+C:\Users\Mario\Desktop\AppStoredProcedureGenerator\DAO\bin\Debug\DAO.pdb
+C:\Users\Mario\Desktop\AppStoredProcedureGenerator\DAO\bin\Debug\Model.dll
+C:\Users\Mario\Desktop\AppStoredProcedureGenerator\DAO\bin\Debug\Model.pdb
+C:\Users\Mario\Desktop\AppStoredProcedureGenerator\DAO\obj\Debug\DAO.csprojResolveAssemblyReference.cache
+C:\Users\Mario\Desktop\AppStoredProcedureGenerator\DAO\obj\Debug\DAO.dll
+C:\Users\Mario\Desktop\AppStoredProcedureGenerator\DAO\obj\Debug\DAO.pdb
+D:\SVN\Gerador de Codigp\DAO\bin\Debug\DAO.dll
+D:\SVN\Gerador de Codigp\DAO\bin\Debug\DAO.pdb
+D:\SVN\Gerador de Codigp\DAO\bin\Debug\Model.dll
+D:\SVN\Gerador de Codigp\DAO\bin\Debug\Model.pdb
+D:\SVN\Gerador de Codigp\DAO\obj\Debug\DAO.csprojResolveAssemblyReference.cache
+D:\SVN\Gerador de Codigp\DAO\obj\Debug\DAO.dll
+D:\SVN\Gerador de Codigp\DAO\obj\Debug\DAO.pdb
+D:\GIT-SVN\Fontes\Gerador_1.0\DAO\bin\Debug\DAO.dll
+D:\GIT-SVN\Fontes\Gerador_1.0\DAO\bin\Debug\DAO.pdb
+D:\GIT-SVN\Fontes\Gerador_1.0\DAO\bin\Debug\Model.dll
+D:\GIT-SVN\Fontes\Gerador_1.0\DAO\bin\Debug\Model.pdb
+D:\GIT-SVN\Fontes\Gerador_1.0\DAO\obj\Debug\DAO.csprojResolveAssemblyReference.cache
+D:\GIT-SVN\Fontes\Gerador_1.0\DAO\obj\Debug\DAO.dll
+D:\GIT-SVN\Fontes\Gerador_1.0\DAO\obj\Debug\DAO.pdb

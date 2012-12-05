@@ -1,0 +1,36 @@
+C:\Users\Andre.HLP\Desktop\AppStoredProcedureGenerator\BO\bin\Debug\BO.dll
+C:\Users\Andre.HLP\Desktop\AppStoredProcedureGenerator\BO\bin\Debug\BO.pdb
+C:\Users\Andre.HLP\Desktop\AppStoredProcedureGenerator\BO\bin\Debug\DAO.dll
+C:\Users\Andre.HLP\Desktop\AppStoredProcedureGenerator\BO\bin\Debug\DAO.pdb
+C:\Users\Andre.HLP\Desktop\AppStoredProcedureGenerator\BO\obj\Debug\BO.csprojResolveAssemblyReference.cache
+C:\Users\Andre.HLP\Desktop\AppStoredProcedureGenerator\BO\obj\Debug\BO.dll
+C:\Users\Andre.HLP\Desktop\AppStoredProcedureGenerator\BO\obj\Debug\BO.pdb
+C:\Users\Andre.HLP\Desktop\AppStoredProcedureGenerator\BO\bin\Debug\Model.dll
+C:\Users\Andre.HLP\Desktop\AppStoredProcedureGenerator\BO\bin\Debug\Model.pdb
+C:\Users\Mario\Desktop\AppStoredProcedureGenerator\BO\bin\Debug\BO.dll
+C:\Users\Mario\Desktop\AppStoredProcedureGenerator\BO\bin\Debug\BO.pdb
+C:\Users\Mario\Desktop\AppStoredProcedureGenerator\BO\bin\Debug\DAO.dll
+C:\Users\Mario\Desktop\AppStoredProcedureGenerator\BO\bin\Debug\Model.dll
+C:\Users\Mario\Desktop\AppStoredProcedureGenerator\BO\bin\Debug\DAO.pdb
+C:\Users\Mario\Desktop\AppStoredProcedureGenerator\BO\bin\Debug\Model.pdb
+C:\Users\Mario\Desktop\AppStoredProcedureGenerator\BO\obj\Debug\BO.csprojResolveAssemblyReference.cache
+C:\Users\Mario\Desktop\AppStoredProcedureGenerator\BO\obj\Debug\BO.dll
+C:\Users\Mario\Desktop\AppStoredProcedureGenerator\BO\obj\Debug\BO.pdb
+D:\SVN\Gerador de Codigp\BO\bin\Debug\BO.dll
+D:\SVN\Gerador de Codigp\BO\bin\Debug\BO.pdb
+D:\SVN\Gerador de Codigp\BO\bin\Debug\DAO.dll
+D:\SVN\Gerador de Codigp\BO\bin\Debug\Model.dll
+D:\SVN\Gerador de Codigp\BO\bin\Debug\DAO.pdb
+D:\SVN\Gerador de Codigp\BO\bin\Debug\Model.pdb
+D:\SVN\Gerador de Codigp\BO\obj\Debug\BO.csprojResolveAssemblyReference.cache
+D:\SVN\Gerador de Codigp\BO\obj\Debug\BO.dll
+D:\SVN\Gerador de Codigp\BO\obj\Debug\BO.pdb
+D:\GIT-SVN\Fontes\Gerador_1.0\BO\bin\Debug\BO.dll
+D:\GIT-SVN\Fontes\Gerador_1.0\BO\bin\Debug\BO.pdb
+D:\GIT-SVN\Fontes\Gerador_1.0\BO\bin\Debug\DAO.dll
+D:\GIT-SVN\Fontes\Gerador_1.0\BO\bin\Debug\Model.dll
+D:\GIT-SVN\Fontes\Gerador_1.0\BO\bin\Debug\DAO.pdb
+D:\GIT-SVN\Fontes\Gerador_1.0\BO\bin\Debug\Model.pdb
+D:\GIT-SVN\Fontes\Gerador_1.0\BO\obj\Debug\BO.csprojResolveAssemblyReference.cache
+D:\GIT-SVN\Fontes\Gerador_1.0\BO\obj\Debug\BO.dll
+D:\GIT-SVN\Fontes\Gerador_1.0\BO\obj\Debug\BO.pdb

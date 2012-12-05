@@ -1,0 +1,87 @@
+C:\Users\Andre.HLP\Desktop\AppStoredProcedureGenerator\UIWindows\bin\Debug\BO.dll
+C:\Users\Andre.HLP\Desktop\AppStoredProcedureGenerator\UIWindows\bin\Debug\DAO.dll
+C:\Users\Andre.HLP\Desktop\AppStoredProcedureGenerator\UIWindows\bin\Debug\BO.pdb
+C:\Users\Andre.HLP\Desktop\AppStoredProcedureGenerator\UIWindows\bin\Debug\DAO.pdb
+C:\Users\Andre.HLP\Desktop\AppStoredProcedureGenerator\UIWindows\obj\x86\Debug\UIWindows.csprojResolveAssemblyReference.cache
+C:\Users\Andre.HLP\Desktop\AppStoredProcedureGenerator\UIWindows\obj\x86\Debug\UIWindows.Properties.Resources.resources
+C:\Users\Andre.HLP\Desktop\AppStoredProcedureGenerator\UIWindows\obj\x86\Debug\UIWindows.csproj.GenerateResource.Cache
+C:\Users\Andre.HLP\Desktop\AppStoredProcedureGenerator\UIWindows\bin\Debug\Model.dll
+C:\Users\Andre.HLP\Desktop\AppStoredProcedureGenerator\UIWindows\bin\Debug\Model.pdb
+C:\Users\Andre.HLP\Desktop\AppStoredProcedureGenerator\UIWindows\obj\x86\Debug\UIWindows.UIGerador.resources
+C:\Users\Andre.HLP\Desktop\AppStoredProcedureGenerator\UIWindows\obj\x86\Debug\UIWindows.UIConexao.resources
+C:\Users\Andre.HLP\Desktop\AppStoredProcedureGenerator\UIWindows\obj\x86\Debug\UIWindows.UIPrincipal.resources
+C:\Users\Andre.HLP\Desktop\AppStoredProcedureGenerator\UIWindows\bin\Debug\GeraProc.exe.manifest
+C:\Users\Andre.HLP\Desktop\AppStoredProcedureGenerator\UIWindows\bin\Debug\GeraProc.application
+C:\Users\Andre.HLP\Desktop\AppStoredProcedureGenerator\UIWindows\bin\Debug\GeraProc.exe
+C:\Users\Andre.HLP\Desktop\AppStoredProcedureGenerator\UIWindows\bin\Debug\GeraProc.pdb
+C:\Users\Andre.HLP\Desktop\AppStoredProcedureGenerator\UIWindows\obj\x86\Debug\GeraProc.exe.licenses
+C:\Users\Andre.HLP\Desktop\AppStoredProcedureGenerator\UIWindows\obj\x86\Debug\GeraProc.exe.manifest
+C:\Users\Andre.HLP\Desktop\AppStoredProcedureGenerator\UIWindows\obj\x86\Debug\GeraProc.application
+C:\Users\Andre.HLP\Desktop\AppStoredProcedureGenerator\UIWindows\obj\x86\Debug\GeraProc.exe
+C:\Users\Andre.HLP\Desktop\AppStoredProcedureGenerator\UIWindows\obj\x86\Debug\GeraProc.pdb
+C:\Users\Mario\Desktop\AppStoredProcedureGenerator\UIWindows\obj\x86\Debug\GeraProc.exe
+C:\Users\Mario\Desktop\AppStoredProcedureGenerator\UIWindows\obj\x86\Debug\GeraProc.pdb
+C:\Users\Mario\Desktop\AppStoredProcedureGenerator\UIWindows\bin\Debug\GeraProc.exe.manifest
+C:\Users\Mario\Desktop\AppStoredProcedureGenerator\UIWindows\bin\Debug\GeraProc.application
+C:\Users\Mario\Desktop\AppStoredProcedureGenerator\UIWindows\bin\Debug\GeraProc.exe
+C:\Users\Mario\Desktop\AppStoredProcedureGenerator\UIWindows\bin\Debug\GeraProc.pdb
+C:\Users\Mario\Desktop\AppStoredProcedureGenerator\UIWindows\bin\Debug\BO.dll
+C:\Users\Mario\Desktop\AppStoredProcedureGenerator\UIWindows\bin\Debug\DAO.dll
+C:\Users\Mario\Desktop\AppStoredProcedureGenerator\UIWindows\bin\Debug\Model.dll
+C:\Users\Mario\Desktop\AppStoredProcedureGenerator\UIWindows\bin\Debug\BO.pdb
+C:\Users\Mario\Desktop\AppStoredProcedureGenerator\UIWindows\bin\Debug\DAO.pdb
+C:\Users\Mario\Desktop\AppStoredProcedureGenerator\UIWindows\bin\Debug\Model.pdb
+C:\Users\Mario\Desktop\AppStoredProcedureGenerator\UIWindows\obj\x86\Debug\UIWindows.csprojResolveAssemblyReference.cache
+C:\Users\Mario\Desktop\AppStoredProcedureGenerator\UIWindows\obj\x86\Debug\UIWindows.Properties.Resources.resources
+C:\Users\Mario\Desktop\AppStoredProcedureGenerator\UIWindows\obj\x86\Debug\UIWindows.UIConexao.resources
+C:\Users\Mario\Desktop\AppStoredProcedureGenerator\UIWindows\obj\x86\Debug\UIWindows.UIGerador.resources
+C:\Users\Mario\Desktop\AppStoredProcedureGenerator\UIWindows\obj\x86\Debug\UIWindows.UIPrincipal.resources
+C:\Users\Mario\Desktop\AppStoredProcedureGenerator\UIWindows\obj\x86\Debug\UIWindows.csproj.GenerateResource.Cache
+C:\Users\Mario\Desktop\AppStoredProcedureGenerator\UIWindows\obj\x86\Debug\GeraProc.exe.licenses
+C:\Users\Mario\Desktop\AppStoredProcedureGenerator\UIWindows\obj\x86\Debug\GeraProc.exe.manifest
+C:\Users\Mario\Desktop\AppStoredProcedureGenerator\UIWindows\obj\x86\Debug\GeraProc.application
+D:\SVN\Gerador de Codigp\UIWindows\obj\x86\Debug\GeraProc.exe
+D:\SVN\Gerador de Codigp\UIWindows\obj\x86\Debug\GeraProc.pdb
+D:\SVN\Gerador de Codigp\UIWindows\bin\Debug\GeraProc.exe.manifest
+D:\SVN\Gerador de Codigp\UIWindows\bin\Debug\GeraProc.application
+D:\SVN\Gerador de Codigp\UIWindows\bin\Debug\GeraProc.exe
+D:\SVN\Gerador de Codigp\UIWindows\bin\Debug\GeraProc.pdb
+D:\SVN\Gerador de Codigp\UIWindows\bin\Debug\BO.dll
+D:\SVN\Gerador de Codigp\UIWindows\bin\Debug\DAO.dll
+D:\SVN\Gerador de Codigp\UIWindows\bin\Debug\Model.dll
+D:\SVN\Gerador de Codigp\UIWindows\bin\Debug\BO.pdb
+D:\SVN\Gerador de Codigp\UIWindows\bin\Debug\DAO.pdb
+D:\SVN\Gerador de Codigp\UIWindows\bin\Debug\Model.pdb
+D:\SVN\Gerador de Codigp\UIWindows\obj\x86\Debug\UIWindows.csprojResolveAssemblyReference.cache
+D:\SVN\Gerador de Codigp\UIWindows\obj\x86\Debug\UIWindows.Properties.Resources.resources
+D:\SVN\Gerador de Codigp\UIWindows\obj\x86\Debug\UIWindows.UIConexao.resources
+D:\SVN\Gerador de Codigp\UIWindows\obj\x86\Debug\UIWindows.UIGerador.resources
+D:\SVN\Gerador de Codigp\UIWindows\obj\x86\Debug\UIWindows.UIPrincipal.resources
+D:\SVN\Gerador de Codigp\UIWindows\obj\x86\Debug\UIWindows.csproj.GenerateResource.Cache
+D:\SVN\Gerador de Codigp\UIWindows\obj\x86\Debug\GeraProc.exe.licenses
+D:\SVN\Gerador de Codigp\UIWindows\obj\x86\Debug\GeraProc.exe.manifest
+D:\SVN\Gerador de Codigp\UIWindows\obj\x86\Debug\GeraProc.application
+D:\SVN\Gerador de Codigp\UIWindows\obj\x86\Debug\UIWindows.UIGeradorCSharp.resources
+D:\SVN\Gerador de Codigp\UIWindows\obj\x86\Debug\UIWindows.UIListaTabelasFilha.resources
+D:\GIT-SVN\Fontes\Gerador_1.0\UIWindows\obj\x86\Debug\GeraProc.exe
+D:\GIT-SVN\Fontes\Gerador_1.0\UIWindows\obj\x86\Debug\GeraProc.pdb
+D:\GIT-SVN\Fontes\Gerador_1.0\UIWindows\obj\x86\Debug\UIWindows.csprojResolveAssemblyReference.cache
+D:\GIT-SVN\Fontes\Gerador_1.0\UIWindows\obj\x86\Debug\UIWindows.Properties.Resources.resources
+D:\GIT-SVN\Fontes\Gerador_1.0\UIWindows\obj\x86\Debug\UIWindows.UIConexao.resources
+D:\GIT-SVN\Fontes\Gerador_1.0\UIWindows\obj\x86\Debug\UIWindows.UIGerador.resources
+D:\GIT-SVN\Fontes\Gerador_1.0\UIWindows\obj\x86\Debug\UIWindows.UIGeradorCSharp.resources
+D:\GIT-SVN\Fontes\Gerador_1.0\UIWindows\obj\x86\Debug\UIWindows.UIListaTabelasFilha.resources
+D:\GIT-SVN\Fontes\Gerador_1.0\UIWindows\obj\x86\Debug\UIWindows.UIPrincipal.resources
+D:\GIT-SVN\Fontes\Gerador_1.0\UIWindows\obj\x86\Debug\UIWindows.csproj.GenerateResource.Cache
+D:\GIT-SVN\Fontes\Gerador_1.0\UIWindows\bin\Debug\GeraProc.exe.manifest
+D:\GIT-SVN\Fontes\Gerador_1.0\UIWindows\bin\Debug\GeraProc.application
+D:\GIT-SVN\Fontes\Gerador_1.0\UIWindows\bin\Debug\GeraProc.exe
+D:\GIT-SVN\Fontes\Gerador_1.0\UIWindows\bin\Debug\GeraProc.pdb
+D:\GIT-SVN\Fontes\Gerador_1.0\UIWindows\bin\Debug\BO.dll
+D:\GIT-SVN\Fontes\Gerador_1.0\UIWindows\bin\Debug\DAO.dll
+D:\GIT-SVN\Fontes\Gerador_1.0\UIWindows\bin\Debug\Model.dll
+D:\GIT-SVN\Fontes\Gerador_1.0\UIWindows\bin\Debug\BO.pdb
+D:\GIT-SVN\Fontes\Gerador_1.0\UIWindows\bin\Debug\DAO.pdb
+D:\GIT-SVN\Fontes\Gerador_1.0\UIWindows\bin\Debug\Model.pdb
+D:\GIT-SVN\Fontes\Gerador_1.0\UIWindows\obj\x86\Debug\GeraProc.exe.manifest
+D:\GIT-SVN\Fontes\Gerador_1.0\UIWindows\obj\x86\Debug\GeraProc.application

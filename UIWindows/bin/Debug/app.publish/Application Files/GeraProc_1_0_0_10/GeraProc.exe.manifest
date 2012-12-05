@@ -1,0 +1,107 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
+  <asmv1:assemblyIdentity name="GeraProc.exe" version="1.0.0.10" publicKeyToken="a4e4c789abf906cf" language="neutral" processorArchitecture="x86" type="win32" />
+  <description asmv2:iconFile="sql_runner.ico" xmlns="urn:schemas-microsoft-com:asm.v1" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="GeraProc" version="1.0.0.0" language="neutral" processorArchitecture="x86" />
+    <commandLine file="GeraProc.exe" parameters="" />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!--
+          UAC Manifest Options
+          If you want to change the Windows User Account Control level replace the 
+          requestedExecutionLevel node with one of the following.
+
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+         If you want to utilize File and Registry Virtualization for backward 
+         compatibility then delete the requestedExecutionLevel node.
+    -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="4.0.30319.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="ComponentFactory.Krypton.Toolkit" version="4.4.0.0" publicKeyToken="A87E673E9ECB6E8E" language="neutral" processorArchitecture="msil" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="BO.dll" size="40960">
+      <assemblyIdentity name="BO" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>fo6x6L6LBY36G3iQwp9gXGdQmt0=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="DAO.dll" size="11776">
+      <assemblyIdentity name="DAO" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>qHSlYKtaqXgjd/BO7f++MYjtfgQ=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="GeraProc.exe" size="53760">
+      <assemblyIdentity name="GeraProc" version="1.0.0.0" language="neutral" processorArchitecture="x86" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>1Exa96T9HXbTIuqNXjroQ15FCyA=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Model.dll" size="5120">
+      <assemblyIdentity name="Model" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>y7pPys3/uALSB2ee2kEMXZbrs4M=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <file name="sql_runner.ico" size="2462">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>zLJ6BmoN4oI3tYQGR9RGuZb0jvE=</dsig:DigestValue>
+    </hash>
+  </file>
+<publisherIdentity name="CN=HLP\andre" issuerKeyHash="fadb8c61fbd0befd08f11318e2f2daa6f7b41d53" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" /><DigestValue>X2/n8CcEIrulS4VWLl9nO20nfjE=</DigestValue></Reference></SignedInfo><SignatureValue>IgKRCAv8Ub5sj5rP2RHTPB7/9SJcdFGtInZoCxorYVcR1HsKr4i/BDZjF1YqSLmM9NisG/u8dAzMomr+XOkP8dyeahPGRBcpWTyeg0865S48akzm6MEOv9m1CyevCmai8uoKxJi75C5KkRCaY/gwBRtT6aq4eoeJQ0HdgH+kGjk=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>3uQxsdywawjFkwoJQCNDnUN37F+ihfDMbu5MjXx5k/8Umh9kZPljNMGho8Nf1QRrGmaoy87aS0aMILFlXA4EKfBZz82Su76omW8j5AOZ8vTDTN8JR5jf3cKrdDnt01Q3lqx+pNglEx4RHSNwIA0sO4IN9i98aPGWXaLPrG/WzMk=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="317e276d3b675f2e56854ba5bb220427f0e76f5f" Description="" Url=""><as:assemblyIdentity name="GeraProc.exe" version="1.0.0.10" publicKeyToken="a4e4c789abf906cf" language="neutral" processorArchitecture="x86" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=HLP\andre</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" /><DigestValue>Ff1A86D115qo0QR/5P3rtV08xmk=</DigestValue></Reference></SignedInfo><SignatureValue>iKIEJEAr1/cnOYJSF9/e2Qa3SOEEjOQVta7ikNMCJv+2AXhmG2yvc5fPG2GtaHDv+Axu2491k/Qv2CBo6imSGyiYslCZNTC5TriOYyXXZ9wGEWKy7bJKejPhOYNin31RMCfECUzBN1jcgUdk/0W3ibYA5MzoBy2jufSP3JyGtqM=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>3uQxsdywawjFkwoJQCNDnUN37F+ihfDMbu5MjXx5k/8Umh9kZPljNMGho8Nf1QRrGmaoy87aS0aMILFlXA4EKfBZz82Su76omW8j5AOZ8vTDTN8JR5jf3cKrdDnt01Q3lqx+pNglEx4RHSNwIA0sO4IN9i98aPGWXaLPrG/WzMk=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIBvTCCASagAwIBAgIQYQind8Pni4xMq0+1O54kvjANBgkqhkiG9w0BAQUFADAdMRswGQYDVQQDHhIASABMAFAAXABhAG4AZAByAGUwHhcNMTIwOTE4MTQzODA3WhcNMTMwOTE4MjAzODA3WjAdMRswGQYDVQQDHhIASABMAFAAXABhAG4AZAByAGUwgZ8wDQYJKoZIhvcNAQEBBQADgY0AMIGJAoGBAN7kMbHcsGsIxZMKCUAjQ51Dd+xfooXwzG7uTI18eZP/FJofZGT5YzTBoaPDX9UEaxpmqMvO2ktGjCCxZVwOBCnwWc/Nkru+qJlvI+QDmfL0w0zfCUeY393Cq3Q57dNUN5asfqTYJRMeER0jcCANLDuCDfYvfGjxll2iz6xv1szJAgMBAAEwDQYJKoZIhvcNAQEFBQADgYEAjAZ1z1z6VNxdbpDw1y/E6VpzTX2GpPtI57jmwf+Vct6L8CHw0Pi7quKU7su4GMbqQKzz95WVW0TZzQJmDZf9s+hpXC39J5REMnvZsXTQcx6zaBjWQ3LH7D1Nr+L6jQ3EOo/8wDkXwPLciykWUcNyKpr+hR+0zrEiesycLaHmOBA=</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>

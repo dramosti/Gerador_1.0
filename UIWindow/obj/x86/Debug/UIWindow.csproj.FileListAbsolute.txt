@@ -1,0 +1,9 @@
+C:\Users\Andre.HLP\Desktop\AppStoredProcedureGenerator\UIWindow\bin\Debug\UIWindow.exe
+C:\Users\Andre.HLP\Desktop\AppStoredProcedureGenerator\UIWindow\bin\Debug\UIWindow.pdb
+C:\Users\Andre.HLP\Desktop\AppStoredProcedureGenerator\UIWindow\obj\x86\Debug\UIWindow.Properties.Resources.resources
+C:\Users\Andre.HLP\Desktop\AppStoredProcedureGenerator\UIWindow\obj\x86\Debug\UIWindow.csproj.GenerateResource.Cache
+C:\Users\Andre.HLP\Desktop\AppStoredProcedureGenerator\UIWindow\obj\x86\Debug\UIWindow.exe
+C:\Users\Andre.HLP\Desktop\AppStoredProcedureGenerator\UIWindow\obj\x86\Debug\UIWindow.pdb
+C:\Users\Andre.HLP\Desktop\AppStoredProcedureGenerator\UIWindow\obj\x86\Debug\UIWindow.UIPrincipal.resources
+C:\Users\Andre.HLP\Desktop\AppStoredProcedureGenerator\UIWindow\obj\x86\Debug\UIWindow.UIConexao.resources
+C:\Users\Andre.HLP\Desktop\AppStoredProcedureGenerator\UIWindow\obj\x86\Debug\UIWindow.UIIGerador.resources
