@@ -102,5 +102,56 @@ namespace UIWindows
                 KryptonMessageBox.Show(null, "A Tela de Geração de Procedures já se encontra aberta", "A V I S O", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
         }
+
+        private void salvarScriptsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Boolean ok = false;
+            foreach (Form frm in this.MdiChildren)
+            {
+                if (frm is UISalvaScript)
+                {
+                    frm.BringToFront();
+                    ok = true;
+                }
+            }
+            if (ok == false)
+            {
+                UISalvaScript g = new UISalvaScript(vservidor: objbo.Servidor, vuser: objbo.UserId,
+                    vpassword: objbo.Senha ,vdataBase: objbo.DataBase, vtipoConexao: objbo.TipoConexao);
+                g.MdiParent = this;
+                g.WindowState = FormWindowState.Maximized;
+                g.ShowInTaskbar = false;
+                g.Show();
+            }
+            else
+            {
+               KryptonMessageBox.Show(null, "A Tela de Backup de scrips já se encontra aberta", "A V I S O", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+        }
+
+        private void cadastroDeMódulosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Boolean ok = false;
+            foreach (Form frm in this.MdiChildren)
+            {
+                if (frm is UICadastraMod)
+                {
+                    frm.BringToFront();
+                    ok = true;
+                }
+            }
+            if (ok == false)
+            {
+                UICadastraMod g = new UICadastraMod();
+                g.MdiParent = this;
+                g.WindowState = FormWindowState.Maximized;
+                g.ShowInTaskbar = false;
+                g.Show();
+            }
+            else
+            {
+                KryptonMessageBox.Show(null, "A Tela de Cadastro de Módulos já se encontra aberta", "A V I S O", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+        }
     }
 }

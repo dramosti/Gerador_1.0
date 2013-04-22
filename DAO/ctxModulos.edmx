@@ -1,0 +1,158 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="2.0" xmlns:edmx="http://schemas.microsoft.com/ado/2008/10/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="ctxModulos.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+        <EntityContainer Name="ctxModulosStoreContainer">
+          <EntitySet Name="Formularios" EntityType="ctxModulos.Store.Formularios" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="Modulos" EntityType="ctxModulos.Store.Modulos" store:Type="Tables" Schema="dbo" />
+          <AssociationSet Name="Modulos_Formularios_FK1" Association="ctxModulos.Store.Modulos_Formularios_FK1">
+            <End Role="Modulos" EntitySet="Modulos" />
+            <End Role="Formularios" EntitySet="Formularios" />
+          </AssociationSet>
+        </EntityContainer>
+        <EntityType Name="Formularios">
+          <Key>
+            <PropertyRef Name="idFormulario" />
+          </Key>
+          <Property Name="idFormulario" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="idModulo" Type="int" />
+          <Property Name="xID" Type="varchar" Nullable="false" MaxLength="100" />
+          <Property Name="xName" Type="varchar" Nullable="false" MaxLength="100" />
+          <Property Name="stSingleton" Type="bit" Nullable="false" />
+          <Property Name="xScope" Type="varchar" Nullable="false" MaxLength="100" />
+          <Property Name="xType" Type="varchar" Nullable="false" MaxLength="100" />
+          <Property Name="stAtivo" Type="bit" Nullable="false" />
+          <Property Name="xObservacao" Type="varchar" MaxLength="500" />
+        </EntityType>
+        <EntityType Name="Modulos">
+          <Key>
+            <PropertyRef Name="idModulo" />
+          </Key>
+          <Property Name="idModulo" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="xNome" Type="varchar" Nullable="false" MaxLength="200" />
+          <Property Name="xNameSpaceCamada" Type="varchar" Nullable="false" MaxLength="100" />
+        </EntityType>
+        <Association Name="Modulos_Formularios_FK1">
+          <End Role="Modulos" Type="ctxModulos.Store.Modulos" Multiplicity="0..1" />
+          <End Role="Formularios" Type="ctxModulos.Store.Formularios" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Modulos">
+              <PropertyRef Name="idModulo" />
+            </Principal>
+            <Dependent Role="Formularios">
+              <PropertyRef Name="idModulo" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="entity" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+        <EntityContainer Name="ctxModulos" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="entityModulos" EntityType="entity.mModulos" />
+          <EntitySet Name="Formularios" EntityType="entity.Formularios" />
+          <AssociationSet Name="Modulos_Formularios_FK1" Association="entity.Modulos_Formularios_FK1">
+            <End Role="mModulos" EntitySet="entityModulos" />
+            <End Role="Formularios" EntitySet="Formularios" />
+          </AssociationSet>
+        </EntityContainer>
+        <EntityType Name="mModulos">
+          <Key>
+            <PropertyRef Name="idModulo" />
+          </Key>
+          <Property Name="idModulo" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="xNome" Type="String" Nullable="false" MaxLength="200" Unicode="false" FixedLength="false" />
+          <Property Name="xNameSpaceCamada" Type="String" Nullable="false" MaxLength="100" Unicode="false" FixedLength="false" />
+          <NavigationProperty Name="Formularios" Relationship="entity.Modulos_Formularios_FK1" FromRole="mModulos" ToRole="Formularios" />
+        </EntityType>
+        <EntityType Name="Formularios">
+          <Key>
+            <PropertyRef Name="idFormulario" />
+          </Key>
+          <Property Type="Int32" Name="idFormulario" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="Int32" Name="idModulo" />
+          <Property Type="String" Name="xID" Nullable="false" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="xName" Nullable="false" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Type="Boolean" Name="stSingleton" Nullable="false" />
+          <Property Type="String" Name="xScope" Nullable="false" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="xType" Nullable="false" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Type="Boolean" Name="stAtivo" Nullable="false" />
+          <Property Type="String" Name="xObservacao" MaxLength="500" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="Modulos" Relationship="entity.Modulos_Formularios_FK1" FromRole="Formularios" ToRole="mModulos" />
+        </EntityType>
+        <Association Name="Modulos_Formularios_FK1">
+          <End Type="entity.mModulos" Role="mModulos" Multiplicity="0..1" />
+          <End Type="entity.Formularios" Role="Formularios" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="mModulos">
+              <PropertyRef Name="idModulo" />
+            </Principal>
+            <Dependent Role="Formularios">
+              <PropertyRef Name="idModulo" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="ctxModulosStoreContainer" CdmEntityContainer="ctxModulos">
+          <EntitySetMapping Name="entityModulos">
+            <EntityTypeMapping TypeName="entity.mModulos">
+              <MappingFragment StoreEntitySet="Modulos">
+                <ScalarProperty Name="idModulo" ColumnName="idModulo" />
+                <ScalarProperty Name="xNome" ColumnName="xNome" />
+                <ScalarProperty Name="xNameSpaceCamada" ColumnName="xNameSpaceCamada" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Formularios">
+            <EntityTypeMapping TypeName="entity.Formularios">
+              <MappingFragment StoreEntitySet="Formularios">
+                <ScalarProperty Name="xObservacao" ColumnName="xObservacao" />
+                <ScalarProperty Name="stAtivo" ColumnName="stAtivo" />
+                <ScalarProperty Name="xType" ColumnName="xType" />
+                <ScalarProperty Name="xScope" ColumnName="xScope" />
+                <ScalarProperty Name="stSingleton" ColumnName="stSingleton" />
+                <ScalarProperty Name="xName" ColumnName="xName" />
+                <ScalarProperty Name="xID" ColumnName="xID" />
+                <ScalarProperty Name="idModulo" ColumnName="idModulo" />
+                <ScalarProperty Name="idFormulario" ColumnName="idFormulario" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2008/10/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="False" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="True" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams>
+      <Diagram Name="ctxModulos">
+        <EntityTypeShape EntityType="entity.mModulos" Width="1.5" PointX="0.75" PointY="0.75" Height="1.59568359375" IsExpanded="true" />
+        <EntityTypeShape EntityType="entity.Formularios" Width="1.5" PointX="3.5" PointY="0.75" Height="2.9417936197916656" />
+        <AssociationConnector Association="entity.Modulos_Formularios_FK1" >
+          <ConnectorPoint PointX="2.25" PointY="1.6439925130208335" />
+          <ConnectorPoint PointX="3.5" PointY="1.6439925130208335" />
+        </AssociationConnector>
+      </Diagram>
+    </Diagrams>
+  </Designer>
+</edmx:Edmx>

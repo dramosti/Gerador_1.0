@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="ctxModulos.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+  <EntityContainer Name="ctxModulosStoreContainer">
+    <EntitySet Name="Formularios" EntityType="ctxModulos.Store.Formularios" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Modulos" EntityType="ctxModulos.Store.Modulos" store:Type="Tables" Schema="dbo" />
+    <AssociationSet Name="Modulos_Formularios_FK1" Association="ctxModulos.Store.Modulos_Formularios_FK1">
+      <End Role="Modulos" EntitySet="Modulos" />
+      <End Role="Formularios" EntitySet="Formularios" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="Formularios">
+    <Key>
+      <PropertyRef Name="idFormulario" />
+    </Key>
+    <Property Name="idFormulario" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="idModulo" Type="int" />
+    <Property Name="xID" Type="varchar" Nullable="false" MaxLength="100" />
+    <Property Name="xName" Type="varchar" Nullable="false" MaxLength="100" />
+    <Property Name="stSingleton" Type="bit" Nullable="false" />
+    <Property Name="xScope" Type="varchar" Nullable="false" MaxLength="100" />
+    <Property Name="xType" Type="varchar" Nullable="false" MaxLength="100" />
+    <Property Name="stAtivo" Type="bit" Nullable="false" />
+    <Property Name="xObservacao" Type="varchar" MaxLength="500" />
+  </EntityType>
+  <EntityType Name="Modulos">
+    <Key>
+      <PropertyRef Name="idModulo" />
+    </Key>
+    <Property Name="idModulo" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="xNome" Type="varchar" Nullable="false" MaxLength="200" />
+    <Property Name="xNameSpaceCamada" Type="varchar" Nullable="false" MaxLength="100" />
+  </EntityType>
+  <Association Name="Modulos_Formularios_FK1">
+    <End Role="Modulos" Type="ctxModulos.Store.Modulos" Multiplicity="0..1" />
+    <End Role="Formularios" Type="ctxModulos.Store.Formularios" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Modulos">
+        <PropertyRef Name="idModulo" />
+      </Principal>
+      <Dependent Role="Formularios">
+        <PropertyRef Name="idModulo" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

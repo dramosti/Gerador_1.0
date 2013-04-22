@@ -85,3 +85,56 @@ D:\GIT-SVN\Fontes\Gerador_1.0\UIWindows\bin\Debug\DAO.pdb
 D:\GIT-SVN\Fontes\Gerador_1.0\UIWindows\bin\Debug\Model.pdb
 D:\GIT-SVN\Fontes\Gerador_1.0\UIWindows\obj\x86\Debug\GeraProc.exe.manifest
 D:\GIT-SVN\Fontes\Gerador_1.0\UIWindows\obj\x86\Debug\GeraProc.application
+D:\projetos teste\Gerador_1.0\UIWindows\obj\x86\Debug\Gera_codigo.exe
+D:\projetos teste\Gerador_1.0\UIWindows\obj\x86\Debug\Gera_codigo.pdb
+D:\projetos teste\Gerador_1.0\UIWindows\obj\x86\Debug\UIWindows.csprojResolveAssemblyReference.cache
+D:\projetos teste\Gerador_1.0\UIWindows\obj\x86\Debug\UIWindows.Properties.Resources.resources
+D:\projetos teste\Gerador_1.0\UIWindows\obj\x86\Debug\UIWindows.UIConexao.resources
+D:\projetos teste\Gerador_1.0\UIWindows\obj\x86\Debug\UIWindows.UIGerador.resources
+D:\projetos teste\Gerador_1.0\UIWindows\obj\x86\Debug\UIWindows.UIGeradorCSharp.resources
+D:\projetos teste\Gerador_1.0\UIWindows\obj\x86\Debug\UIWindows.UIListaTabelasFilha.resources
+D:\projetos teste\Gerador_1.0\UIWindows\obj\x86\Debug\UIWindows.UIPrincipal.resources
+D:\projetos teste\Gerador_1.0\UIWindows\obj\x86\Debug\UIWindows.UISalvaScript.resources
+D:\projetos teste\Gerador_1.0\UIWindows\obj\x86\Debug\UIWindows.csproj.GenerateResource.Cache
+D:\projetos teste\Gerador_1.0\UIWindows\bin\Debug\Gera_codigo.exe.manifest
+D:\projetos teste\Gerador_1.0\UIWindows\bin\Debug\Gera_codigo.application
+D:\projetos teste\Gerador_1.0\UIWindows\bin\Debug\Gera_codigo.exe
+D:\projetos teste\Gerador_1.0\UIWindows\bin\Debug\Gera_codigo.pdb
+D:\projetos teste\Gerador_1.0\UIWindows\bin\Debug\BO.dll
+D:\projetos teste\Gerador_1.0\UIWindows\bin\Debug\cMessageBoxCustomizado.dll
+D:\projetos teste\Gerador_1.0\UIWindows\bin\Debug\DAO.dll
+D:\projetos teste\Gerador_1.0\UIWindows\bin\Debug\Model.dll
+D:\projetos teste\Gerador_1.0\UIWindows\bin\Debug\BO.pdb
+D:\projetos teste\Gerador_1.0\UIWindows\bin\Debug\DAO.pdb
+D:\projetos teste\Gerador_1.0\UIWindows\bin\Debug\cMessageBoxCustomizado.pdb
+D:\projetos teste\Gerador_1.0\UIWindows\bin\Debug\Model.pdb
+D:\projetos teste\Gerador_1.0\UIWindows\obj\x86\Debug\Gera_codigo.exe.manifest
+D:\projetos teste\Gerador_1.0\UIWindows\obj\x86\Debug\Gera_codigo.application
+D:\GitHub\HLP\Gerador_1.0\UIWindows\bin\Debug\Gera_codigo.exe.config
+D:\GitHub\HLP\Gerador_1.0\UIWindows\bin\Debug\Gera_codigo.exe.manifest
+D:\GitHub\HLP\Gerador_1.0\UIWindows\bin\Debug\Gera_codigo.application
+D:\GitHub\HLP\Gerador_1.0\UIWindows\bin\Debug\Gera_codigo.exe
+D:\GitHub\HLP\Gerador_1.0\UIWindows\bin\Debug\Gera_codigo.pdb
+D:\GitHub\HLP\Gerador_1.0\UIWindows\bin\Debug\BO.dll
+D:\GitHub\HLP\Gerador_1.0\UIWindows\bin\Debug\cMessageBoxCustomizado.dll
+D:\GitHub\HLP\Gerador_1.0\UIWindows\bin\Debug\DAO.dll
+D:\GitHub\HLP\Gerador_1.0\UIWindows\bin\Debug\Model.dll
+D:\GitHub\HLP\Gerador_1.0\UIWindows\bin\Debug\BO.pdb
+D:\GitHub\HLP\Gerador_1.0\UIWindows\bin\Debug\DAO.pdb
+D:\GitHub\HLP\Gerador_1.0\UIWindows\bin\Debug\Model.pdb
+D:\GitHub\HLP\Gerador_1.0\UIWindows\obj\x86\Debug\UIWindows.csprojResolveAssemblyReference.cache
+D:\GitHub\HLP\Gerador_1.0\UIWindows\obj\x86\Debug\UIWindows.UIPesquisaForm.resources
+D:\GitHub\HLP\Gerador_1.0\UIWindows\obj\x86\Debug\UIWindows.Properties.Resources.resources
+D:\GitHub\HLP\Gerador_1.0\UIWindows\obj\x86\Debug\UIWindows.UICadastraMod.resources
+D:\GitHub\HLP\Gerador_1.0\UIWindows\obj\x86\Debug\UIWindows.UIConexao.resources
+D:\GitHub\HLP\Gerador_1.0\UIWindows\obj\x86\Debug\UIWindows.UIGerador.resources
+D:\GitHub\HLP\Gerador_1.0\UIWindows\obj\x86\Debug\UIWindows.UIGeradorCSharp.resources
+D:\GitHub\HLP\Gerador_1.0\UIWindows\obj\x86\Debug\UIWindows.UIListaTabelasFilha.resources
+D:\GitHub\HLP\Gerador_1.0\UIWindows\obj\x86\Debug\UIWindows.UIPrincipal.resources
+D:\GitHub\HLP\Gerador_1.0\UIWindows\obj\x86\Debug\UIWindows.UIRelMod.resources
+D:\GitHub\HLP\Gerador_1.0\UIWindows\obj\x86\Debug\UIWindows.UISalvaScript.resources
+D:\GitHub\HLP\Gerador_1.0\UIWindows\obj\x86\Debug\UIWindows.csproj.GenerateResource.Cache
+D:\GitHub\HLP\Gerador_1.0\UIWindows\obj\x86\Debug\Gera_codigo.exe.manifest
+D:\GitHub\HLP\Gerador_1.0\UIWindows\obj\x86\Debug\Gera_codigo.application
+D:\GitHub\HLP\Gerador_1.0\UIWindows\obj\x86\Debug\Gera_codigo.exe
+D:\GitHub\HLP\Gerador_1.0\UIWindows\obj\x86\Debug\Gera_codigo.pdb

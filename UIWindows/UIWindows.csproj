@@ -9,9 +9,10 @@
     <OutputType>WinExe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>UIWindows</RootNamespace>
-    <AssemblyName>GeraProc</AssemblyName>
+    <AssemblyName>Gera_codigo</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
-    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
     <FileAlignment>512</FileAlignment>
     <IsWebBootstrapper>false</IsWebBootstrapper>
     <PublishUrl>\\192.168.9.100\g\CSharp\Desenvolvimento\Projetos\Gerador_de_Codigo\GeradorProcedure\</PublishUrl>
@@ -66,12 +67,27 @@
     <ApplicationIcon>sql_runner.ico</ApplicationIcon>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="cMessageBoxCustomizado, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\dependencias\cMessageBoxCustomizado.dll</HintPath>
+    </Reference>
     <Reference Include="ComponentFactory.Krypton.Toolkit, Version=4.4.0.0, Culture=neutral, PublicKeyToken=a87e673e9ecb6e8e, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>C:\Program Files (x86)\Component Factory\Krypton Toolkit 4.4.0\Bin\ComponentFactory.Krypton.Toolkit.dll</HintPath>
     </Reference>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="FlashControlV71, Version=1.0.3187.32366, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -82,6 +98,35 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Relatórios\relModForms.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>relModForms.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UIPesquisaForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UIPesquisaForm.Designer.cs">
+      <DependentUpon>UIPesquisaForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PROD_MODULOSDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PROD_MODULOSDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="UICadastraMod.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UICadastraMod.Designer.cs">
+      <DependentUpon>UICadastraMod.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UIMessage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UIMessage.Designer.cs">
+      <DependentUpon>UIMessage.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="UIConexao.cs">
@@ -114,6 +159,26 @@
     <Compile Include="UIPrincipal.Designer.cs">
       <DependentUpon>UIPrincipal.cs</DependentUpon>
     </Compile>
+    <Compile Include="UIRelMod.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UIRelMod.Designer.cs">
+      <DependentUpon>UIRelMod.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UISalvaScript.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UISalvaScript.Designer.cs">
+      <DependentUpon>UISalvaScript.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Relatórios\relModForms.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>relModForms.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UIPesquisaForm.resx">
+      <DependentUpon>UIPesquisaForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -124,6 +189,10 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="UICadastraMod.resx">
+      <DependentUpon>UICadastraMod.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
     <EmbeddedResource Include="UIConexao.resx">
       <DependentUpon>UIConexao.cs</DependentUpon>
       <SubType>Designer</SubType>
@@ -143,7 +212,29 @@
     <EmbeddedResource Include="UIPrincipal.resx">
       <DependentUpon>UIPrincipal.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="UIRelMod.resx">
+      <DependentUpon>UIRelMod.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UISalvaScript.resx">
+      <DependentUpon>UISalvaScript.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="App.Config" />
+    <None Include="PROD_MODULOSDataSet.xsc">
+      <DependentUpon>PROD_MODULOSDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="PROD_MODULOSDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>PROD_MODULOSDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="PROD_MODULOSDataSet.xss">
+      <DependentUpon>PROD_MODULOSDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\DataSources\DAO.ctxModulos.datasource" />
+    <None Include="Properties\DataSources\DAO.mModulos.datasource" />
     <None Include="Properties\DataSources\DAO.TabelasDAO.datasource" />
+    <None Include="Properties\DataSources\DAO.vwFormularios.datasource" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -163,6 +254,10 @@
     <ProjectReference Include="..\DAO\DAO.csproj">
       <Project>{D93D51EE-06D7-40F7-A5E1-AB05929201D3}</Project>
       <Name>DAO</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Model\Model.csproj">
+      <Project>{62A65481-B931-4169-A361-A9A573478AC0}</Project>
+      <Name>Model</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
@@ -192,7 +287,11 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\77.png" />
+    <None Include="Resources\1366138764_adept_update.png" />
     <Content Include="sql_runner.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

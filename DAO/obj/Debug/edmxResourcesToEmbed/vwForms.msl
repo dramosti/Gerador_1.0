@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="PROD_MODULOSModelStoreContainer" CdmEntityContainer="ctxFormularios">
+    <EntitySetMapping Name="vwFormularios">
+      <EntityTypeMapping TypeName="PROD_MODULOSModel.vwFormularios">
+        <MappingFragment StoreEntitySet="vwFormularios">
+          <ScalarProperty Name="stAtivo" ColumnName="stAtivo" />
+          <ScalarProperty Name="idModulo" ColumnName="idModulo" />
+          <ScalarProperty Name="xNome" ColumnName="xNome" />
+          <ScalarProperty Name="xID" ColumnName="xID" />
+          <ScalarProperty Name="xName" ColumnName="xName" />
+          <ScalarProperty Name="xType" ColumnName="xType" />
+          <ScalarProperty Name="stSingleton" ColumnName="stSingleton" />
+          <ScalarProperty Name="xScope" ColumnName="xScope" />
+          <ScalarProperty Name="xObservacao" ColumnName="xObservacao" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

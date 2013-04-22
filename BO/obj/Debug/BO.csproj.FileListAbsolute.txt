@@ -34,3 +34,21 @@ D:\GIT-SVN\Fontes\Gerador_1.0\BO\bin\Debug\Model.pdb
 D:\GIT-SVN\Fontes\Gerador_1.0\BO\obj\Debug\BO.csprojResolveAssemblyReference.cache
 D:\GIT-SVN\Fontes\Gerador_1.0\BO\obj\Debug\BO.dll
 D:\GIT-SVN\Fontes\Gerador_1.0\BO\obj\Debug\BO.pdb
+D:\projetos teste\Gerador_1.0\BO\bin\Debug\BO.dll
+D:\projetos teste\Gerador_1.0\BO\bin\Debug\BO.pdb
+D:\projetos teste\Gerador_1.0\BO\bin\Debug\DAO.dll
+D:\projetos teste\Gerador_1.0\BO\bin\Debug\Model.dll
+D:\projetos teste\Gerador_1.0\BO\bin\Debug\DAO.pdb
+D:\projetos teste\Gerador_1.0\BO\bin\Debug\Model.pdb
+D:\projetos teste\Gerador_1.0\BO\obj\Debug\BO.csprojResolveAssemblyReference.cache
+D:\projetos teste\Gerador_1.0\BO\obj\Debug\BO.dll
+D:\projetos teste\Gerador_1.0\BO\obj\Debug\BO.pdb
+D:\GitHub\HLP\Gerador_1.0\BO\bin\Debug\BO.dll
+D:\GitHub\HLP\Gerador_1.0\BO\bin\Debug\BO.pdb
+D:\GitHub\HLP\Gerador_1.0\BO\bin\Debug\DAO.dll
+D:\GitHub\HLP\Gerador_1.0\BO\bin\Debug\Model.dll
+D:\GitHub\HLP\Gerador_1.0\BO\bin\Debug\DAO.pdb
+D:\GitHub\HLP\Gerador_1.0\BO\bin\Debug\Model.pdb
+D:\GitHub\HLP\Gerador_1.0\BO\obj\Debug\BO.csprojResolveAssemblyReference.cache
+D:\GitHub\HLP\Gerador_1.0\BO\obj\Debug\BO.dll
+D:\GitHub\HLP\Gerador_1.0\BO\obj\Debug\BO.pdb

@@ -33,9 +33,13 @@
             this.geradorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.storedProceduresToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.códigosCSharpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.backupToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.salvarScriptsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
             this.toolStripDropDownButton1 = new System.Windows.Forms.ToolStripDropDownButton();
             this.mudarAConexãoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.cadastrosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.cadastroDeMódulosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.statusStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -44,7 +48,9 @@
             // 
             this.menuStrip1.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.geradorToolStripMenuItem});
+            this.geradorToolStripMenuItem,
+            this.backupToolStripMenuItem,
+            this.cadastrosToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(593, 24);
@@ -76,6 +82,21 @@
             this.códigosCSharpToolStripMenuItem.Text = "Códigos CSharp";
             this.códigosCSharpToolStripMenuItem.Click += new System.EventHandler(this.códigosCSharpToolStripMenuItem_Click);
             // 
+            // backupToolStripMenuItem
+            // 
+            this.backupToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.salvarScriptsToolStripMenuItem});
+            this.backupToolStripMenuItem.Name = "backupToolStripMenuItem";
+            this.backupToolStripMenuItem.Size = new System.Drawing.Size(58, 20);
+            this.backupToolStripMenuItem.Text = "Backup";
+            // 
+            // salvarScriptsToolStripMenuItem
+            // 
+            this.salvarScriptsToolStripMenuItem.Name = "salvarScriptsToolStripMenuItem";
+            this.salvarScriptsToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.salvarScriptsToolStripMenuItem.Text = "Salvar scripts";
+            this.salvarScriptsToolStripMenuItem.Click += new System.EventHandler(this.salvarScriptsToolStripMenuItem_Click);
+            // 
             // statusStrip1
             // 
             this.statusStrip1.Font = new System.Drawing.Font("Segoe UI", 9F);
@@ -105,6 +126,21 @@
             this.mudarAConexãoToolStripMenuItem.Size = new System.Drawing.Size(167, 22);
             this.mudarAConexãoToolStripMenuItem.Text = "Mudar a Conexão";
             this.mudarAConexãoToolStripMenuItem.Click += new System.EventHandler(this.mudarAConexãoToolStripMenuItem_Click);
+            // 
+            // cadastrosToolStripMenuItem
+            // 
+            this.cadastrosToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.cadastroDeMódulosToolStripMenuItem});
+            this.cadastrosToolStripMenuItem.Name = "cadastrosToolStripMenuItem";
+            this.cadastrosToolStripMenuItem.Size = new System.Drawing.Size(71, 20);
+            this.cadastrosToolStripMenuItem.Text = "Cadastros";
+            // 
+            // cadastroDeMódulosToolStripMenuItem
+            // 
+            this.cadastroDeMódulosToolStripMenuItem.Name = "cadastroDeMódulosToolStripMenuItem";
+            this.cadastroDeMódulosToolStripMenuItem.Size = new System.Drawing.Size(187, 22);
+            this.cadastroDeMódulosToolStripMenuItem.Text = "Cadastro de Módulos";
+            this.cadastroDeMódulosToolStripMenuItem.Click += new System.EventHandler(this.cadastroDeMódulosToolStripMenuItem_Click);
             // 
             // UIPrincipal
             // 
@@ -137,5 +173,9 @@
         private System.Windows.Forms.ToolStripDropDownButton toolStripDropDownButton1;
         private System.Windows.Forms.ToolStripMenuItem mudarAConexãoToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem códigosCSharpToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem backupToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem salvarScriptsToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem cadastrosToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem cadastroDeMódulosToolStripMenuItem;
     }
 }

@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="PROD_MODULOSModel" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+  <EntityContainer Name="ctxFormularios" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="vwFormularios" EntityType="PROD_MODULOSModel.vwFormularios" />
+  </EntityContainer>
+  <EntityType Name="vwFormularios">
+    <Key>
+      <PropertyRef Name="xNome" />
+      <PropertyRef Name="xID" />
+      <PropertyRef Name="xName" />
+      <PropertyRef Name="xType" />
+      <PropertyRef Name="stSingleton" />
+      <PropertyRef Name="xScope" />
+      <PropertyRef Name="stAtivo" />
+    </Key>
+    <Property Name="xNome" Type="String" Nullable="false" MaxLength="200" Unicode="false" FixedLength="false" />
+    <Property Name="xID" Type="String" Nullable="false" MaxLength="100" Unicode="false" FixedLength="false" />
+    <Property Name="xName" Type="String" Nullable="false" MaxLength="100" Unicode="false" FixedLength="false" />
+    <Property Name="xType" Type="String" Nullable="false" MaxLength="100" Unicode="false" FixedLength="false" />
+    <Property Name="stSingleton" Type="Boolean" Nullable="false" />
+    <Property Name="xScope" Type="String" Nullable="false" MaxLength="100" Unicode="false" FixedLength="false" />
+    <Property Name="xObservacao" Type="String" MaxLength="500" Unicode="false" FixedLength="false" />
+    <Property Type="Int32" Name="idModulo" />
+    <Property Type="Boolean" Name="stAtivo" Nullable="false" />
+  </EntityType>
+</Schema>

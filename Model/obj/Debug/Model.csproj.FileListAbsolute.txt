@@ -15,3 +15,12 @@ D:\GIT-SVN\Fontes\Gerador_1.0\Model\bin\Debug\Model.dll
 D:\GIT-SVN\Fontes\Gerador_1.0\Model\bin\Debug\Model.pdb
 D:\GIT-SVN\Fontes\Gerador_1.0\Model\obj\Debug\Model.dll
 D:\GIT-SVN\Fontes\Gerador_1.0\Model\obj\Debug\Model.pdb
+D:\projetos teste\Gerador_1.0\Model\bin\Debug\Model.dll
+D:\projetos teste\Gerador_1.0\Model\bin\Debug\Model.pdb
+D:\projetos teste\Gerador_1.0\Model\obj\Debug\Model.csprojResolveAssemblyReference.cache
+D:\projetos teste\Gerador_1.0\Model\obj\Debug\Model.dll
+D:\projetos teste\Gerador_1.0\Model\obj\Debug\Model.pdb
+D:\GitHub\HLP\Gerador_1.0\Model\bin\Debug\Model.dll
+D:\GitHub\HLP\Gerador_1.0\Model\bin\Debug\Model.pdb
+D:\GitHub\HLP\Gerador_1.0\Model\obj\Debug\Model.dll
+D:\GitHub\HLP\Gerador_1.0\Model\obj\Debug\Model.pdb

@@ -48,50 +48,50 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="BO.dll" size="40448">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="BO.dll" size="42496">
       <assemblyIdentity name="BO" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>BAXtEHLUVUjIrbmX+YXhVUf83Kw=</dsig:DigestValue>
+        <dsig:DigestValue>/EM1Hx6LXo+IWFewSCToV8g4ibs=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="DAO.dll" size="11776">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="DAO.dll" size="12800">
       <assemblyIdentity name="DAO" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>Ty+FIKH7kR2yIgLhGqButAsUbqM=</dsig:DigestValue>
+        <dsig:DigestValue>TlloSM7PC1/d9gbnpGl9gozSEG0=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="GeraProc.exe" size="55808">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="GeraProc.exe" size="64000">
       <assemblyIdentity name="GeraProc" version="1.0.0.0" language="neutral" processorArchitecture="x86" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>iPJpdrhtjieBOt3FoBLwtu+K6Bc=</dsig:DigestValue>
+        <dsig:DigestValue>1Q6FmjwB0JXTe5rtQZQJRknD49Q=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Model.dll" size="5120">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Model.dll" size="5632">
       <assemblyIdentity name="Model" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>y7pPys3/uALSB2ee2kEMXZbrs4M=</dsig:DigestValue>
+        <dsig:DigestValue>XlHorDGA1RGD6rDyOldfHH/iXm8=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

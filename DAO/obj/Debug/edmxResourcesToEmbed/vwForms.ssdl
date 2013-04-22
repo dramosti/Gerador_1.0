@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="PROD_MODULOSModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+  <EntityContainer Name="PROD_MODULOSModelStoreContainer">
+    <EntitySet Name="vwFormularios" EntityType="PROD_MODULOSModel.Store.vwFormularios" store:Type="Views" store:Schema="dbo" store:Name="vwFormularios">
+      <DefiningQuery>SELECT 
+      [vwFormularios].[xNome] AS [xNome], 
+      [vwFormularios].[xID] AS [xID], 
+      [vwFormularios].[xName] AS [xName], 
+      [vwFormularios].[xType] AS [xType], 
+      [vwFormularios].[stSingleton] AS [stSingleton], 
+      [vwFormularios].[xScope] AS [xScope], 
+      [vwFormularios].[xObservacao] AS [xObservacao], 
+      [vwFormularios].[idModulo] AS [idModulo], 
+      [vwFormularios].[stAtivo] AS [stAtivo]
+      FROM [dbo].[vwFormularios] AS [vwFormularios]</DefiningQuery>
+    </EntitySet>
+  </EntityContainer>
+  <!--Errors Found During Generation:
+      warning 6002: The table/view 'PROD_MODULOS.dbo.vwFormularios' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+  <EntityType Name="vwFormularios">
+    <Key>
+      <PropertyRef Name="xNome" />
+      <PropertyRef Name="xID" />
+      <PropertyRef Name="xName" />
+      <PropertyRef Name="xType" />
+      <PropertyRef Name="stSingleton" />
+      <PropertyRef Name="xScope" />
+      <PropertyRef Name="stAtivo" />
+    </Key>
+    <Property Name="xNome" Type="varchar" Nullable="false" MaxLength="200" />
+    <Property Name="xID" Type="varchar" Nullable="false" MaxLength="100" />
+    <Property Name="xName" Type="varchar" Nullable="false" MaxLength="100" />
+    <Property Name="xType" Type="varchar" Nullable="false" MaxLength="100" />
+    <Property Name="stSingleton" Type="bit" Nullable="false" />
+    <Property Name="xScope" Type="varchar" Nullable="false" MaxLength="100" />
+    <Property Name="xObservacao" Type="varchar" MaxLength="500" />
+    <Property Name="idModulo" Type="int" />
+    <Property Name="stAtivo" Type="bit" Nullable="false" />
+  </EntityType>
+</Schema>

@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="ctxModulosStoreContainer" CdmEntityContainer="ctxModulos">
+    <EntitySetMapping Name="entityModulos">
+      <EntityTypeMapping TypeName="entity.mModulos">
+        <MappingFragment StoreEntitySet="Modulos">
+          <ScalarProperty Name="idModulo" ColumnName="idModulo" />
+          <ScalarProperty Name="xNome" ColumnName="xNome" />
+          <ScalarProperty Name="xNameSpaceCamada" ColumnName="xNameSpaceCamada" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Formularios">
+      <EntityTypeMapping TypeName="entity.Formularios">
+        <MappingFragment StoreEntitySet="Formularios">
+          <ScalarProperty Name="xObservacao" ColumnName="xObservacao" />
+          <ScalarProperty Name="stAtivo" ColumnName="stAtivo" />
+          <ScalarProperty Name="xType" ColumnName="xType" />
+          <ScalarProperty Name="xScope" ColumnName="xScope" />
+          <ScalarProperty Name="stSingleton" ColumnName="stSingleton" />
+          <ScalarProperty Name="xName" ColumnName="xName" />
+          <ScalarProperty Name="xID" ColumnName="xID" />
+          <ScalarProperty Name="idModulo" ColumnName="idModulo" />
+          <ScalarProperty Name="idFormulario" ColumnName="idFormulario" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

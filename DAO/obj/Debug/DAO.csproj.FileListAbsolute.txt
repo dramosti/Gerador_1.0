@@ -26,3 +26,18 @@ D:\GIT-SVN\Fontes\Gerador_1.0\DAO\bin\Debug\Model.pdb
 D:\GIT-SVN\Fontes\Gerador_1.0\DAO\obj\Debug\DAO.csprojResolveAssemblyReference.cache
 D:\GIT-SVN\Fontes\Gerador_1.0\DAO\obj\Debug\DAO.dll
 D:\GIT-SVN\Fontes\Gerador_1.0\DAO\obj\Debug\DAO.pdb
+D:\projetos teste\Gerador_1.0\DAO\bin\Debug\DAO.dll
+D:\projetos teste\Gerador_1.0\DAO\bin\Debug\DAO.pdb
+D:\projetos teste\Gerador_1.0\DAO\bin\Debug\Model.dll
+D:\projetos teste\Gerador_1.0\DAO\bin\Debug\Model.pdb
+D:\projetos teste\Gerador_1.0\DAO\obj\Debug\DAO.csprojResolveAssemblyReference.cache
+D:\projetos teste\Gerador_1.0\DAO\obj\Debug\DAO.dll
+D:\projetos teste\Gerador_1.0\DAO\obj\Debug\DAO.pdb
+D:\GitHub\HLP\Gerador_1.0\DAO\bin\Debug\DAO.dll.config
+D:\GitHub\HLP\Gerador_1.0\DAO\bin\Debug\DAO.dll
+D:\GitHub\HLP\Gerador_1.0\DAO\bin\Debug\DAO.pdb
+D:\GitHub\HLP\Gerador_1.0\DAO\bin\Debug\Model.dll
+D:\GitHub\HLP\Gerador_1.0\DAO\bin\Debug\Model.pdb
+D:\GitHub\HLP\Gerador_1.0\DAO\obj\Debug\DAO.csprojResolveAssemblyReference.cache
+D:\GitHub\HLP\Gerador_1.0\DAO\obj\Debug\DAO.dll
+D:\GitHub\HLP\Gerador_1.0\DAO\obj\Debug\DAO.pdb
