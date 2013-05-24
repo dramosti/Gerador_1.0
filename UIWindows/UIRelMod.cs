@@ -21,9 +21,9 @@ namespace UIWindows
             _objRel.DataDefinition.RecordSelectionFormula = vParametro;
             rvModulos.ReportSource = _objRel;
             ConnectionInfo myConnectionInfo = new ConnectionInfo();
-            myConnectionInfo.ServerName = "HLP065";
+            myConnectionInfo.ServerName = "HLPSRV";
             myConnectionInfo.DatabaseName = "PROD_MODULOS";
-            myConnectionInfo.UserID = "hlp";
+            myConnectionInfo.UserID = "sa";
             myConnectionInfo.Password = "H029060tSql";
             SetDBLogonForReport(myConnectionInfo, _objRel);
             rvModulos.RefreshReport();

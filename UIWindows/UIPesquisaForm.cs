@@ -125,8 +125,15 @@ namespace UIWindows
                 cont++;
             }
 
-            UIRelMod _objRelat = new UIRelMod("{Formularios.idModulo} in [" + _idMod + "]");
-            _objRelat.ShowDialog();
+            if(_idMod.Trim() == "")
+            {
+                MessageBox.Show("Não foi selecionado nenhum registro!", "Atenção", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+            }
+            else
+            {
+                UIRelMod _objRelat = new UIRelMod("{Formularios.idModulo} in [" + _idMod + "]");
+                _objRelat.ShowDialog();
+            }
         }
 
     }

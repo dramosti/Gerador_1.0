@@ -26,8 +26,8 @@ namespace UIWindows.Properties {
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
-        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=HLP065;Initial Catalog=PROD_MODULOS;Persist Security Info=True;User I" +
-            "D=hlp;Password=H029060tSql")]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=HLPSRV;Initial Catalog=PROD_MODULOS;Persist Security Info=True;User I" +
+            "D=sa;Password=H029060tSql")]
         public string PROD_MODULOSConnectionString {
             get {
                 return ((string)(this["PROD_MODULOSConnectionString"]));

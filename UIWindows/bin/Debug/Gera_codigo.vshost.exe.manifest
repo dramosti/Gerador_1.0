@@ -155,7 +155,7 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>2EeaJha8Ce9FL4tOPHXFDGgiqdk=</dsig:DigestValue>
+        <dsig:DigestValue>6CQrHC50WAM8Ma0cyLhZoh+wFIU=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -179,19 +179,19 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>W3FUMyPZf9iZXLc53ZnM8x36LO8=</dsig:DigestValue>
+        <dsig:DigestValue>tXkhQs2yrMmm5gOR1oI/cnDknl0=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Gera_codigo.exe" size="145408">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Gera_codigo.exe" size="145920">
       <assemblyIdentity name="Gera_codigo" version="1.0.0.0" language="neutral" processorArchitecture="x86" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>zupd5TmWF11oLoerTTKZhoRgaJc=</dsig:DigestValue>
+        <dsig:DigestValue>9aIZb+ZrrvhxgRuZi8jHdwhGlbA=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -207,13 +207,13 @@
       </hash>
     </dependentAssembly>
   </dependency>
-  <file name="Gera_codigo.exe.config" size="1660">
+  <file name="Gera_codigo.exe.config" size="1656">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-      <dsig:DigestValue>EVL1AUT/fxUX+cuJSyqSKKpXyUs=</dsig:DigestValue>
+      <dsig:DigestValue>2DDU6R1EwrCGdzaWp8jYe/gHpFI=</dsig:DigestValue>
     </hash>
   </file>
   <file name="sql_runner.ico" size="2462">
