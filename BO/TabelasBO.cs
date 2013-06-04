@@ -18,6 +18,9 @@ namespace BO
         public string ProcNome_Duplicar;
         public enum tipoProc { DELETE, SAVE, UPDATE, COPY, SEL };
 
+        //string vservidor, string vuser, string vpassword,
+            //string vdataBase, byte vtipoConexao
+
         public void setTabela(string sNomeTabela)
         {
             _colunas = GetDetalhes(sNomeTabela);
@@ -309,7 +312,10 @@ namespace BO
 
             if (_colunas != null)
             {
+                constraintsBo objConstBo = new constraintsBo();
+                List<constraintsModel> lConstraints = objConstBo.GetConstraints(_colunas.First().NomeTabela);
                 string campos = String.Empty;
+                string sValues = String.Empty;
                 string where = String.Empty;
 
                 ProcNome_Duplicar =  _colunas.First().TabelaOwner + ".Proc_copy_" + _colunas.First().NomeTabela;
@@ -334,7 +340,33 @@ namespace BO
                 {
                     if (_colunas[i].TipoColuna != "int identity")
                     {
-                        campos += "{0}   " + _colunas[i].NomeTabela + "." + _colunas[i].NomeColuna + (_colunas.Count - i == 1 ? "" : ",");
+                        campos += "{0}   " + _colunas[i].NomeTabela + "." + _colunas[i].NomeColuna +
+                            (_colunas.Count - i == 1 ? "" : ",");
+                    }
+                }
+
+                for (int i = 0; i < _colunas.Count; i++)
+                {
+                    if (_colunas[i].TipoColuna != "int identity")
+                    {
+                        sValues += "{0}   " + ((lConstraints.Where(c => c.sColumnName == _colunas[i].NomeColuna).Count() > 0) ?
+                            "(select top(1) "+
+                            "case "+
+                            "when LEN(t." + _colunas[i].NomeColuna + ") < ((select c.CHARACTER_MAXIMUM_LENGTH from INFORMATION_SCHEMA.COLUMNS c "+
+                            "where c.COLUMN_NAME = '" + _colunas[i].NomeColuna + "' and c.TABLE_NAME = '" + _colunas[i] .NomeTabela+ "') - 5) " +
+                            "then t." + _colunas[i].NomeColuna+"+'_copy' "+
+                            "else " + "SUBSTRING(" + _colunas[i].NomeTabela + "." + _colunas[i].NomeColuna +", "+
+                            "((LEN(" + _colunas[i].NomeTabela + "." + _colunas[i].NomeColuna + ")) - "+
+                            "(select c.CHARACTER_MAXIMUM_LENGTH from INFORMATION_SCHEMA.COLUMNS c " +
+                            "where c.COLUMN_NAME = '" + _colunas[i].NomeColuna + "' and c.TABLE_NAME = '" + _colunas[i].NomeTabela + "') + 6), " +
+                            "(select c.CHARACTER_MAXIMUM_LENGTH from INFORMATION_SCHEMA.COLUMNS c "+
+                            "where c.COLUMN_NAME = '" + _colunas[i].NomeColuna + "' and c.TABLE_NAME = '" + _colunas[i].NomeTabela + "'))+'_copy' " +
+                            "end "+                            
+                            "from "+_colunas[i].NomeTabela+" t where t."+_colunas[i].NomeColuna+
+                                " like " + _colunas[i].NomeTabela + "." + _colunas[i].NomeColuna + "+'%' " +
+                                "order by t." + _colunas[i].NomeColuna + " desc)" :
+                                _colunas[i].NomeTabela + "." + _colunas[i].NomeColuna) +
+                            (_colunas.Count - i == 1 ? "" : ",");
                     }
                 }
 
@@ -343,7 +375,7 @@ namespace BO
                 sp.Append("{0}(");
                 sp.Append(campos);
                 sp.Append("{0}){0}SELECT");
-                sp.Append(campos);
+                sp.Append(sValues);
 
                 sp.Append("{0}FROM " + _colunas.FirstOrDefault().NomeTabela + "{0}");
                 sp.Append("WHERE ");
@@ -355,6 +387,8 @@ namespace BO
             }
             return string.Format(sp.ToString(), Environment.NewLine);
         }
+
+
 
         public string GerarPropriedadesWithOrder(string sNomeTabela, bool tbFilho)
         {
@@ -486,6 +520,5 @@ namespace BO
                     return "";
             }
         }
-
     }
 }

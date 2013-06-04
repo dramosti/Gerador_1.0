@@ -52,6 +52,7 @@
     <Compile Include="Classes\ServiceFilho.cs" />
     <Compile Include="Classes\ServiceNormal.cs" />
     <Compile Include="Classes\ServicePai.cs" />
+    <Compile Include="constraintsBo.cs" />
     <Compile Include="cSerializar.cs" />
     <Compile Include="modulosBO.cs" />
     <Compile Include="pesquisas\pesquisaForms.cs" />

@@ -41,3 +41,5 @@ D:\GitHub\HLP\Gerador_1.0\DAO\bin\Debug\Model.pdb
 D:\GitHub\HLP\Gerador_1.0\DAO\obj\Debug\DAO.csprojResolveAssemblyReference.cache
 D:\GitHub\HLP\Gerador_1.0\DAO\obj\Debug\DAO.dll
 D:\GitHub\HLP\Gerador_1.0\DAO\obj\Debug\DAO.pdb
+D:\GitHub\HLP\Gerador_1.0\DAO\bin\Debug\Comum.dll
+D:\GitHub\HLP\Gerador_1.0\DAO\bin\Debug\Comum.pdb

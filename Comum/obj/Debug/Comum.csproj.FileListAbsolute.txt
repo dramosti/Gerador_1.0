@@ -1,0 +1,4 @@
+D:\GitHub\HLP\Gerador_1.0\Comum\bin\Debug\Comum.dll
+D:\GitHub\HLP\Gerador_1.0\Comum\bin\Debug\Comum.pdb
+D:\GitHub\HLP\Gerador_1.0\Comum\obj\Debug\Comum.dll
+D:\GitHub\HLP\Gerador_1.0\Comum\obj\Debug\Comum.pdb

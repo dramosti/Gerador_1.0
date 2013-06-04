@@ -45,6 +45,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ConexaoDAO.cs" />
+    <Compile Include="constraintsDao.cs" />
     <Compile Include="ctxModulos.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -62,6 +63,10 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\Comum\Comum.csproj">
+      <Project>{0D5AEAF3-A2C9-41C3-897B-42894C30B93C}</Project>
+      <Name>Comum</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Model\Model.csproj">
       <Project>{62A65481-B931-4169-A361-A9A573478AC0}</Project>
       <Name>Model</Name>

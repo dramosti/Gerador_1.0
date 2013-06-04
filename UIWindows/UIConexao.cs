@@ -8,6 +8,7 @@ using System.Windows.Forms;
 using ComponentFactory.Krypton.Toolkit;
 using BO;
 using System.Threading;
+using Comum;
 
 namespace UIWindows
 {
@@ -113,6 +114,13 @@ namespace UIWindows
             tbo.Senha = txtSenha.Text;
             tbo.Servidor = cbxServidor.Text;
             tbo.DataBase = cbxDatabase.SelectedValue.ToString();
+
+            //Guardando informações de conexão em variáveis estáticas
+            Static.sUser = txtUsuario.Text;
+            Static.sPassword = txtSenha.Text;
+            Static.sServidor = cbxServidor.Text;
+            Static.sBase = cbxDatabase.SelectedValue.ToString();
+            Static.bTipoConexao = tbo.TipoConexao;
 
             try
             {

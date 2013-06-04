@@ -26,7 +26,7 @@
     <UpdateRequired>false</UpdateRequired>
     <MapFileExtensions>true</MapFileExtensions>
     <InstallUrl>\\192.168.9.100\g\CSharp\Desenvolvimento\Projetos\Gerador_de_Codigo\GeradorProcedure\</InstallUrl>
-    <ApplicationRevision>11</ApplicationRevision>
+    <ApplicationRevision>13</ApplicationRevision>
     <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
     <PublishWizardCompleted>true</PublishWizardCompleted>
@@ -250,6 +250,10 @@
     <ProjectReference Include="..\BO\BO.csproj">
       <Project>{CA7199DE-F43A-445F-9F4E-32BF632F7565}</Project>
       <Name>BO</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Comum\Comum.csproj">
+      <Project>{0D5AEAF3-A2C9-41C3-897B-42894C30B93C}</Project>
+      <Name>Comum</Name>
     </ProjectReference>
     <ProjectReference Include="..\DAO\DAO.csproj">
       <Project>{D93D51EE-06D7-40F7-A5E1-AB05929201D3}</Project>

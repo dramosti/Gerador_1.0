@@ -24,6 +24,7 @@ namespace UIWindows
         {
             InitializeComponent();
             this.objbo = objbo;
+      
         }
 
         private void UIGerador_Load(object sender, EventArgs e)

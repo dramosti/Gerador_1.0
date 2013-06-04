@@ -52,3 +52,5 @@ D:\GitHub\HLP\Gerador_1.0\BO\bin\Debug\Model.pdb
 D:\GitHub\HLP\Gerador_1.0\BO\obj\Debug\BO.csprojResolveAssemblyReference.cache
 D:\GitHub\HLP\Gerador_1.0\BO\obj\Debug\BO.dll
 D:\GitHub\HLP\Gerador_1.0\BO\obj\Debug\BO.pdb
+D:\GitHub\HLP\Gerador_1.0\BO\bin\Debug\Comum.dll
+D:\GitHub\HLP\Gerador_1.0\BO\bin\Debug\Comum.pdb

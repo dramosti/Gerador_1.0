@@ -138,3 +138,5 @@ D:\GitHub\HLP\Gerador_1.0\UIWindows\obj\x86\Debug\Gera_codigo.exe.manifest
 D:\GitHub\HLP\Gerador_1.0\UIWindows\obj\x86\Debug\Gera_codigo.application
 D:\GitHub\HLP\Gerador_1.0\UIWindows\obj\x86\Debug\Gera_codigo.exe
 D:\GitHub\HLP\Gerador_1.0\UIWindows\obj\x86\Debug\Gera_codigo.pdb
+D:\GitHub\HLP\Gerador_1.0\UIWindows\bin\Debug\Comum.dll
+D:\GitHub\HLP\Gerador_1.0\UIWindows\bin\Debug\Comum.pdb
