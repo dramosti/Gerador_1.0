@@ -32,29 +32,32 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UISalvaScript));
             this.pnBotoes = new ComponentFactory.Krypton.Toolkit.KryptonPanel();
             this.gbAdicionais = new ComponentFactory.Krypton.Toolkit.KryptonGroup();
-            this.btnAtualizar = new System.Windows.Forms.Button();
             this.ilBotoes = new System.Windows.Forms.ImageList(this.components);
             this.btnExecSelec = new ComponentFactory.Krypton.Toolkit.KryptonButton();
             this.lblStatus = new ComponentFactory.Krypton.Toolkit.KryptonLabel();
             this.btnSalvarSel = new ComponentFactory.Krypton.Toolkit.KryptonButton();
             this.pbGeral = new System.Windows.Forms.ProgressBar();
             this.gbSalvarTodos = new ComponentFactory.Krypton.Toolkit.KryptonGroupBox();
+            this.cbTriggers = new ComponentFactory.Krypton.Toolkit.KryptonCheckBox();
             this.btnExecutarTodos = new ComponentFactory.Krypton.Toolkit.KryptonButton();
             this.cbProcedures = new ComponentFactory.Krypton.Toolkit.KryptonCheckBox();
             this.cbViews = new ComponentFactory.Krypton.Toolkit.KryptonCheckBox();
             this.btnSalvarTodos = new ComponentFactory.Krypton.Toolkit.KryptonButton();
             this.kryptonLabel1 = new ComponentFactory.Krypton.Toolkit.KryptonLabel();
             this.edtCaminho = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
-            this.btnPesquisaProc = new ComponentFactory.Krypton.Toolkit.ButtonSpecAny();
             this.edtPreView = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
             this.containerMain = new ComponentFactory.Krypton.Toolkit.KryptonSplitContainer();
-            this.listProcedures = new System.Windows.Forms.ListBox();
+            this.kryptonSplitContainer1 = new ComponentFactory.Krypton.Toolkit.KryptonSplitContainer();
             this.folderBrowser = new System.Windows.Forms.FolderBrowserDialog();
             this.toolTip = new System.Windows.Forms.ToolTip(this.components);
-            this.cbTriggers = new ComponentFactory.Krypton.Toolkit.KryptonCheckBox();
-            this.kryptonSplitContainer1 = new ComponentFactory.Krypton.Toolkit.KryptonSplitContainer();
+            this.btnAtualizar = new System.Windows.Forms.Button();
+            this.btnPesquisaProc = new ComponentFactory.Krypton.Toolkit.ButtonSpecAny();
+            this.listConstraints = new System.Windows.Forms.ListBox();
+            this.kryptonSplitContainer2 = new ComponentFactory.Krypton.Toolkit.KryptonSplitContainer();
             this.listView = new System.Windows.Forms.ListBox();
+            this.listProcedures = new System.Windows.Forms.ListBox();
             this.listTriggers = new System.Windows.Forms.ListBox();
+            this.cbConstraints = new ComponentFactory.Krypton.Toolkit.KryptonCheckBox();
             ((System.ComponentModel.ISupportInitialize)(this.pnBotoes)).BeginInit();
             this.pnBotoes.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gbAdicionais)).BeginInit();
@@ -77,6 +80,12 @@
             ((System.ComponentModel.ISupportInitialize)(this.kryptonSplitContainer1.Panel2)).BeginInit();
             this.kryptonSplitContainer1.Panel2.SuspendLayout();
             this.kryptonSplitContainer1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.kryptonSplitContainer2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.kryptonSplitContainer2.Panel1)).BeginInit();
+            this.kryptonSplitContainer2.Panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.kryptonSplitContainer2.Panel2)).BeginInit();
+            this.kryptonSplitContainer2.Panel2.SuspendLayout();
+            this.kryptonSplitContainer2.SuspendLayout();
             this.SuspendLayout();
             // 
             // pnBotoes
@@ -90,9 +99,9 @@
             this.pnBotoes.Controls.Add(this.kryptonLabel1);
             this.pnBotoes.Controls.Add(this.edtCaminho);
             this.pnBotoes.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.pnBotoes.Location = new System.Drawing.Point(0, 406);
+            this.pnBotoes.Location = new System.Drawing.Point(0, 383);
             this.pnBotoes.Name = "pnBotoes";
-            this.pnBotoes.Size = new System.Drawing.Size(1060, 65);
+            this.pnBotoes.Size = new System.Drawing.Size(1060, 88);
             this.pnBotoes.TabIndex = 0;
             // 
             // gbAdicionais
@@ -107,17 +116,6 @@
             this.gbAdicionais.Panel.Controls.Add(this.btnAtualizar);
             this.gbAdicionais.Size = new System.Drawing.Size(150, 61);
             this.gbAdicionais.TabIndex = 1;
-            // 
-            // btnAtualizar
-            // 
-            this.btnAtualizar.ImageIndex = 0;
-            this.btnAtualizar.ImageList = this.ilBotoes;
-            this.btnAtualizar.Location = new System.Drawing.Point(7, 3);
-            this.btnAtualizar.Name = "btnAtualizar";
-            this.btnAtualizar.Size = new System.Drawing.Size(30, 30);
-            this.btnAtualizar.TabIndex = 1;
-            this.btnAtualizar.UseVisualStyleBackColor = true;
-            this.btnAtualizar.Click += new System.EventHandler(this.btnAtualizar_Click);
             // 
             // ilBotoes
             // 
@@ -171,14 +169,25 @@
             // 
             // gbSalvarTodos.Panel
             // 
+            this.gbSalvarTodos.Panel.Controls.Add(this.cbConstraints);
             this.gbSalvarTodos.Panel.Controls.Add(this.cbTriggers);
             this.gbSalvarTodos.Panel.Controls.Add(this.btnExecutarTodos);
             this.gbSalvarTodos.Panel.Controls.Add(this.cbProcedures);
             this.gbSalvarTodos.Panel.Controls.Add(this.cbViews);
             this.gbSalvarTodos.Panel.Controls.Add(this.btnSalvarTodos);
-            this.gbSalvarTodos.Size = new System.Drawing.Size(229, 65);
+            this.gbSalvarTodos.Size = new System.Drawing.Size(229, 88);
             this.gbSalvarTodos.TabIndex = 5;
             this.gbSalvarTodos.Text = "Caption";
+            // 
+            // cbTriggers
+            // 
+            this.cbTriggers.LabelStyle = ComponentFactory.Krypton.Toolkit.LabelStyle.NormalControl;
+            this.cbTriggers.Location = new System.Drawing.Point(3, 40);
+            this.cbTriggers.Name = "cbTriggers";
+            this.cbTriggers.Size = new System.Drawing.Size(68, 20);
+            this.cbTriggers.TabIndex = 9;
+            this.cbTriggers.Text = "Triggers";
+            this.cbTriggers.Values.Text = "Triggers";
             // 
             // btnExecutarTodos
             // 
@@ -237,16 +246,10 @@
             this.edtCaminho.Text = "G:\\CSharp\\Desenvolvimento\\Projetos\\Magnificus\\Dados SQL\\Script\\backups";
             this.edtCaminho.Leave += new System.EventHandler(this.edtCaminho_Leave);
             // 
-            // btnPesquisaProc
-            // 
-            this.btnPesquisaProc.Image = global::UIWindows.Properties.Resources._77;
-            this.btnPesquisaProc.UniqueName = "9AB02FB6DB384E4F93934D9EA57B44F0";
-            this.btnPesquisaProc.Click += new System.EventHandler(this.btnPesquisaProc_Click);
-            // 
             // edtPreView
             // 
             this.edtPreView.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.edtPreView.Location = new System.Drawing.Point(0, 185);
+            this.edtPreView.Location = new System.Drawing.Point(0, 162);
             this.edtPreView.Multiline = true;
             this.edtPreView.Name = "edtPreView";
             this.edtPreView.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
@@ -262,34 +265,14 @@
             // 
             // containerMain.Panel1
             // 
-            this.containerMain.Panel1.Controls.Add(this.listProcedures);
+            this.containerMain.Panel1.Controls.Add(this.kryptonSplitContainer2);
             // 
             // containerMain.Panel2
             // 
             this.containerMain.Panel2.Controls.Add(this.kryptonSplitContainer1);
-            this.containerMain.Size = new System.Drawing.Size(1060, 185);
-            this.containerMain.SplitterDistance = 336;
+            this.containerMain.Size = new System.Drawing.Size(1060, 162);
+            this.containerMain.SplitterDistance = 572;
             this.containerMain.TabIndex = 2;
-            // 
-            // listProcedures
-            // 
-            this.listProcedures.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.listProcedures.FormattingEnabled = true;
-            this.listProcedures.Location = new System.Drawing.Point(0, 0);
-            this.listProcedures.Name = "listProcedures";
-            this.listProcedures.Size = new System.Drawing.Size(336, 185);
-            this.listProcedures.TabIndex = 9;
-            this.listProcedures.Click += new System.EventHandler(this.listProcedures_Click);
-            // 
-            // cbTriggers
-            // 
-            this.cbTriggers.LabelStyle = ComponentFactory.Krypton.Toolkit.LabelStyle.NormalControl;
-            this.cbTriggers.Location = new System.Drawing.Point(3, 40);
-            this.cbTriggers.Name = "cbTriggers";
-            this.cbTriggers.Size = new System.Drawing.Size(68, 20);
-            this.cbTriggers.TabIndex = 9;
-            this.cbTriggers.Text = "Triggers";
-            this.cbTriggers.Values.Text = "Triggers";
             // 
             // kryptonSplitContainer1
             // 
@@ -300,14 +283,59 @@
             // 
             // kryptonSplitContainer1.Panel1
             // 
-            this.kryptonSplitContainer1.Panel1.Controls.Add(this.listView);
+            this.kryptonSplitContainer1.Panel1.Controls.Add(this.listTriggers);
             // 
             // kryptonSplitContainer1.Panel2
             // 
-            this.kryptonSplitContainer1.Panel2.Controls.Add(this.listTriggers);
-            this.kryptonSplitContainer1.Size = new System.Drawing.Size(719, 185);
-            this.kryptonSplitContainer1.SplitterDistance = 352;
+            this.kryptonSplitContainer1.Panel2.Controls.Add(this.listConstraints);
+            this.kryptonSplitContainer1.Size = new System.Drawing.Size(483, 162);
+            this.kryptonSplitContainer1.SplitterDistance = 308;
             this.kryptonSplitContainer1.TabIndex = 0;
+            // 
+            // btnAtualizar
+            // 
+            this.btnAtualizar.ImageIndex = 0;
+            this.btnAtualizar.ImageList = this.ilBotoes;
+            this.btnAtualizar.Location = new System.Drawing.Point(7, 3);
+            this.btnAtualizar.Name = "btnAtualizar";
+            this.btnAtualizar.Size = new System.Drawing.Size(30, 30);
+            this.btnAtualizar.TabIndex = 1;
+            this.btnAtualizar.UseVisualStyleBackColor = true;
+            this.btnAtualizar.Click += new System.EventHandler(this.btnAtualizar_Click);
+            // 
+            // btnPesquisaProc
+            // 
+            this.btnPesquisaProc.Image = global::UIWindows.Properties.Resources._77;
+            this.btnPesquisaProc.UniqueName = "9AB02FB6DB384E4F93934D9EA57B44F0";
+            this.btnPesquisaProc.Click += new System.EventHandler(this.btnPesquisaProc_Click);
+            // 
+            // listConstraints
+            // 
+            this.listConstraints.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.listConstraints.FormattingEnabled = true;
+            this.listConstraints.Location = new System.Drawing.Point(0, 0);
+            this.listConstraints.Name = "listConstraints";
+            this.listConstraints.Size = new System.Drawing.Size(170, 162);
+            this.listConstraints.TabIndex = 0;
+            this.listConstraints.Click += new System.EventHandler(this.listConstraints_Click);
+            // 
+            // kryptonSplitContainer2
+            // 
+            this.kryptonSplitContainer2.Cursor = System.Windows.Forms.Cursors.Default;
+            this.kryptonSplitContainer2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.kryptonSplitContainer2.Location = new System.Drawing.Point(0, 0);
+            this.kryptonSplitContainer2.Name = "kryptonSplitContainer2";
+            // 
+            // kryptonSplitContainer2.Panel1
+            // 
+            this.kryptonSplitContainer2.Panel1.Controls.Add(this.listView);
+            // 
+            // kryptonSplitContainer2.Panel2
+            // 
+            this.kryptonSplitContainer2.Panel2.Controls.Add(this.listProcedures);
+            this.kryptonSplitContainer2.Size = new System.Drawing.Size(572, 162);
+            this.kryptonSplitContainer2.SplitterDistance = 349;
+            this.kryptonSplitContainer2.TabIndex = 0;
             // 
             // listView
             // 
@@ -315,9 +343,20 @@
             this.listView.FormattingEnabled = true;
             this.listView.Location = new System.Drawing.Point(0, 0);
             this.listView.Name = "listView";
-            this.listView.Size = new System.Drawing.Size(352, 185);
-            this.listView.TabIndex = 11;
+            this.listView.Size = new System.Drawing.Size(349, 162);
+            this.listView.TabIndex = 14;
             this.listView.Click += new System.EventHandler(this.listView_Click);
+            // 
+            // listProcedures
+            // 
+            this.listProcedures.AccessibleRole = System.Windows.Forms.AccessibleRole.MenuBar;
+            this.listProcedures.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.listProcedures.FormattingEnabled = true;
+            this.listProcedures.Location = new System.Drawing.Point(0, 0);
+            this.listProcedures.Name = "listProcedures";
+            this.listProcedures.Size = new System.Drawing.Size(218, 162);
+            this.listProcedures.TabIndex = 12;
+            this.listProcedures.Click += new System.EventHandler(this.listProcedures_Click);
             // 
             // listTriggers
             // 
@@ -325,9 +364,19 @@
             this.listTriggers.FormattingEnabled = true;
             this.listTriggers.Location = new System.Drawing.Point(0, 0);
             this.listTriggers.Name = "listTriggers";
-            this.listTriggers.Size = new System.Drawing.Size(362, 185);
-            this.listTriggers.TabIndex = 0;
+            this.listTriggers.Size = new System.Drawing.Size(308, 162);
+            this.listTriggers.TabIndex = 3;
             this.listTriggers.Click += new System.EventHandler(this.listTriggers_Click);
+            // 
+            // cbConstraints
+            // 
+            this.cbConstraints.LabelStyle = ComponentFactory.Krypton.Toolkit.LabelStyle.NormalControl;
+            this.cbConstraints.Location = new System.Drawing.Point(3, 61);
+            this.cbConstraints.Name = "cbConstraints";
+            this.cbConstraints.Size = new System.Drawing.Size(85, 20);
+            this.cbConstraints.TabIndex = 10;
+            this.cbConstraints.Text = "Constraints";
+            this.cbConstraints.Values.Text = "Constraints";
             // 
             // UISalvaScript
             // 
@@ -364,6 +413,12 @@
             this.kryptonSplitContainer1.Panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.kryptonSplitContainer1)).EndInit();
             this.kryptonSplitContainer1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.kryptonSplitContainer2.Panel1)).EndInit();
+            this.kryptonSplitContainer2.Panel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.kryptonSplitContainer2.Panel2)).EndInit();
+            this.kryptonSplitContainer2.Panel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.kryptonSplitContainer2)).EndInit();
+            this.kryptonSplitContainer2.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -385,7 +440,6 @@
         private ComponentFactory.Krypton.Toolkit.KryptonButton btnSalvarTodos;
         private System.Windows.Forms.ProgressBar pbGeral;
         private ComponentFactory.Krypton.Toolkit.KryptonLabel lblStatus;
-        private System.Windows.Forms.ListBox listProcedures;
         private ComponentFactory.Krypton.Toolkit.KryptonButton btnExecSelec;
         private ComponentFactory.Krypton.Toolkit.KryptonButton btnExecutarTodos;
         private ComponentFactory.Krypton.Toolkit.KryptonGroup gbAdicionais;
@@ -394,8 +448,12 @@
         private System.Windows.Forms.ToolTip toolTip;
         private ComponentFactory.Krypton.Toolkit.KryptonCheckBox cbTriggers;
         private ComponentFactory.Krypton.Toolkit.KryptonSplitContainer kryptonSplitContainer1;
+        private System.Windows.Forms.ListBox listConstraints;
+        private ComponentFactory.Krypton.Toolkit.KryptonSplitContainer kryptonSplitContainer2;
         private System.Windows.Forms.ListBox listView;
+        private System.Windows.Forms.ListBox listProcedures;
         private System.Windows.Forms.ListBox listTriggers;
+        private ComponentFactory.Krypton.Toolkit.KryptonCheckBox cbConstraints;
 
 
     }

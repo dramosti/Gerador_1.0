@@ -37,7 +37,9 @@ namespace UIWindows
             this.btnExecTela = new ComponentFactory.Krypton.Toolkit.KryptonPanel();
             this.kryptonSplitContainer1 = new ComponentFactory.Krypton.Toolkit.KryptonSplitContainer();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.splitContainer1 = new System.Windows.Forms.SplitContainer();
             this.lbTabelas = new ComponentFactory.Krypton.Toolkit.KryptonListBox();
+            this.clBoxColunas = new ComponentFactory.Krypton.Toolkit.KryptonCheckedListBox();
             this.btnGerarProc = new ComponentFactory.Krypton.Toolkit.KryptonButton();
             this.kryptonSplitContainer2 = new ComponentFactory.Krypton.Toolkit.KryptonSplitContainer();
             this.tabControl1 = new System.Windows.Forms.TabControl();
@@ -51,11 +53,16 @@ namespace UIWindows
             this.txtPesquisa = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
             this.tabDuplica = new System.Windows.Forms.TabPage();
             this.txtDuplicar = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
-            this.txtViews = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
+            this.tpConstraints = new System.Windows.Forms.TabPage();
+            this.txtConstraints = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
             this.kryptonPanel1 = new ComponentFactory.Krypton.Toolkit.KryptonPanel();
             this.lblProcess = new ComponentFactory.Krypton.Toolkit.KryptonLabel();
             this.pgProgresso = new System.Windows.Forms.ProgressBar();
             this.kryptonButton1 = new ComponentFactory.Krypton.Toolkit.KryptonButton();
+            this.txtViews = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
+            this.cbConstraints = new ComponentFactory.Krypton.Toolkit.KryptonCheckBox();
+            this.cbViews = new ComponentFactory.Krypton.Toolkit.KryptonCheckBox();
+            this.cbProcedures = new ComponentFactory.Krypton.Toolkit.KryptonCheckBox();
             this.tabPage2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel6)).BeginInit();
             this.tabPage3.SuspendLayout();
@@ -71,6 +78,10 @@ namespace UIWindows
             this.kryptonSplitContainer1.Panel2.SuspendLayout();
             this.kryptonSplitContainer1.SuspendLayout();
             this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
+            this.splitContainer1.Panel1.SuspendLayout();
+            this.splitContainer1.Panel2.SuspendLayout();
+            this.splitContainer1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonSplitContainer2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonSplitContainer2.Panel1)).BeginInit();
             this.kryptonSplitContainer2.Panel1.SuspendLayout();
@@ -83,6 +94,7 @@ namespace UIWindows
             this.tabDelete.SuspendLayout();
             this.tabPesquisa.SuspendLayout();
             this.tabDuplica.SuspendLayout();
+            this.tpConstraints.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel1)).BeginInit();
             this.kryptonPanel1.SuspendLayout();
             this.SuspendLayout();
@@ -177,37 +189,62 @@ namespace UIWindows
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.Transparent;
-            this.panel2.Controls.Add(this.lbTabelas);
-            this.panel2.Controls.Add(this.btnGerarProc);
+            this.panel2.Controls.Add(this.splitContainer1);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel2.Location = new System.Drawing.Point(0, 0);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(280, 472);
             this.panel2.TabIndex = 111;
             // 
+            // splitContainer1
+            // 
+            this.splitContainer1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.splitContainer1.Location = new System.Drawing.Point(0, 0);
+            this.splitContainer1.Name = "splitContainer1";
+            this.splitContainer1.Orientation = System.Windows.Forms.Orientation.Horizontal;
+            // 
+            // splitContainer1.Panel1
+            // 
+            this.splitContainer1.Panel1.Controls.Add(this.lbTabelas);
+            // 
+            // splitContainer1.Panel2
+            // 
+            this.splitContainer1.Panel2.Controls.Add(this.clBoxColunas);
+            this.splitContainer1.Panel2.Controls.Add(this.btnGerarProc);
+            this.splitContainer1.Size = new System.Drawing.Size(280, 472);
+            this.splitContainer1.SplitterDistance = 234;
+            this.splitContainer1.TabIndex = 0;
+            // 
             // lbTabelas
             // 
-            this.lbTabelas.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.lbTabelas.Location = new System.Drawing.Point(3, 3);
+            this.lbTabelas.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lbTabelas.Location = new System.Drawing.Point(0, 0);
             this.lbTabelas.Name = "lbTabelas";
-            this.lbTabelas.Size = new System.Drawing.Size(274, 408);
-            this.lbTabelas.TabIndex = 1;
+            this.lbTabelas.Size = new System.Drawing.Size(280, 234);
+            this.lbTabelas.TabIndex = 4;
+            this.lbTabelas.SelectedIndexChanged += new System.EventHandler(this.lbTabelas_SelectedIndexChanged);
+            // 
+            // clBoxColunas
+            // 
+            this.clBoxColunas.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.clBoxColunas.Location = new System.Drawing.Point(0, 0);
+            this.clBoxColunas.Name = "clBoxColunas";
+            this.clBoxColunas.Size = new System.Drawing.Size(280, 208);
+            this.clBoxColunas.TabIndex = 9;
             // 
             // btnGerarProc
             // 
-            this.btnGerarProc.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnGerarProc.Location = new System.Drawing.Point(3, 442);
+            this.btnGerarProc.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.btnGerarProc.Location = new System.Drawing.Point(0, 208);
             this.btnGerarProc.Name = "btnGerarProc";
-            this.btnGerarProc.Size = new System.Drawing.Size(275, 26);
-            this.btnGerarProc.TabIndex = 2;
+            this.btnGerarProc.Size = new System.Drawing.Size(280, 26);
+            this.btnGerarProc.TabIndex = 8;
             this.btnGerarProc.Values.Text = "&Gerar Códigos";
             this.btnGerarProc.Click += new System.EventHandler(this.btnGerarProc_Click);
             // 
             // kryptonSplitContainer2
             // 
+            this.kryptonSplitContainer2.Cursor = System.Windows.Forms.Cursors.Default;
             this.kryptonSplitContainer2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.kryptonSplitContainer2.Location = new System.Drawing.Point(0, 0);
             this.kryptonSplitContainer2.Name = "kryptonSplitContainer2";
@@ -231,6 +268,7 @@ namespace UIWindows
             this.tabControl1.Controls.Add(this.tabDelete);
             this.tabControl1.Controls.Add(this.tabPesquisa);
             this.tabControl1.Controls.Add(this.tabDuplica);
+            this.tabControl1.Controls.Add(this.tpConstraints);
             this.tabControl1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tabControl1.Location = new System.Drawing.Point(0, 0);
             this.tabControl1.Name = "tabControl1";
@@ -348,32 +386,45 @@ namespace UIWindows
             this.txtDuplicar.Size = new System.Drawing.Size(597, 440);
             this.txtDuplicar.TabIndex = 1;
             // 
-            // txtViews
+            // tpConstraints
             // 
-            this.txtViews.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.txtViews.Location = new System.Drawing.Point(0, 0);
-            this.txtViews.Multiline = true;
-            this.txtViews.Name = "txtViews";
-            this.txtViews.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.SparkleBlue;
-            this.txtViews.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.txtViews.Size = new System.Drawing.Size(307, 472);
-            this.txtViews.TabIndex = 114;
+            this.tpConstraints.Controls.Add(this.txtConstraints);
+            this.tpConstraints.Location = new System.Drawing.Point(4, 22);
+            this.tpConstraints.Name = "tpConstraints";
+            this.tpConstraints.Padding = new System.Windows.Forms.Padding(3);
+            this.tpConstraints.Size = new System.Drawing.Size(603, 446);
+            this.tpConstraints.TabIndex = 5;
+            this.tpConstraints.Text = "Constraints";
+            this.tpConstraints.UseVisualStyleBackColor = true;
+            // 
+            // txtConstraints
+            // 
+            this.txtConstraints.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.txtConstraints.Location = new System.Drawing.Point(3, 3);
+            this.txtConstraints.Multiline = true;
+            this.txtConstraints.Name = "txtConstraints";
+            this.txtConstraints.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.SparkleBlue;
+            this.txtConstraints.Size = new System.Drawing.Size(597, 440);
+            this.txtConstraints.TabIndex = 0;
             // 
             // kryptonPanel1
             // 
+            this.kryptonPanel1.Controls.Add(this.cbProcedures);
+            this.kryptonPanel1.Controls.Add(this.cbViews);
+            this.kryptonPanel1.Controls.Add(this.cbConstraints);
             this.kryptonPanel1.Controls.Add(this.lblProcess);
             this.kryptonPanel1.Controls.Add(this.pgProgresso);
             this.kryptonPanel1.Controls.Add(this.kryptonButton1);
             this.kryptonPanel1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.kryptonPanel1.Location = new System.Drawing.Point(0, 410);
+            this.kryptonPanel1.Location = new System.Drawing.Point(0, 385);
             this.kryptonPanel1.Name = "kryptonPanel1";
-            this.kryptonPanel1.Size = new System.Drawing.Size(307, 62);
+            this.kryptonPanel1.Size = new System.Drawing.Size(307, 87);
             this.kryptonPanel1.TabIndex = 115;
             // 
             // lblProcess
             // 
             this.lblProcess.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.lblProcess.Location = new System.Drawing.Point(75, 36);
+            this.lblProcess.Location = new System.Drawing.Point(75, 61);
             this.lblProcess.Name = "lblProcess";
             this.lblProcess.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.lblProcess.Size = new System.Drawing.Size(88, 20);
@@ -384,7 +435,7 @@ namespace UIWindows
             // pgProgresso
             // 
             this.pgProgresso.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.pgProgresso.Location = new System.Drawing.Point(179, 35);
+            this.pgProgresso.Location = new System.Drawing.Point(179, 60);
             this.pgProgresso.MarqueeAnimationSpeed = 50;
             this.pgProgresso.Name = "pgProgresso";
             this.pgProgresso.Size = new System.Drawing.Size(116, 21);
@@ -399,6 +450,47 @@ namespace UIWindows
             this.kryptonButton1.TabIndex = 125;
             this.kryptonButton1.Values.Text = "&Executar";
             this.kryptonButton1.Click += new System.EventHandler(this.kryptonButton1_Click);
+            // 
+            // txtViews
+            // 
+            this.txtViews.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.txtViews.Location = new System.Drawing.Point(0, 0);
+            this.txtViews.Multiline = true;
+            this.txtViews.Name = "txtViews";
+            this.txtViews.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.SparkleBlue;
+            this.txtViews.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.txtViews.Size = new System.Drawing.Size(307, 472);
+            this.txtViews.TabIndex = 114;
+            // 
+            // cbConstraints
+            // 
+            this.cbConstraints.LabelStyle = ComponentFactory.Krypton.Toolkit.LabelStyle.NormalControl;
+            this.cbConstraints.Location = new System.Drawing.Point(29, 3);
+            this.cbConstraints.Name = "cbConstraints";
+            this.cbConstraints.Size = new System.Drawing.Size(85, 20);
+            this.cbConstraints.TabIndex = 128;
+            this.cbConstraints.Text = "Constraints";
+            this.cbConstraints.Values.Text = "Constraints";
+            // 
+            // cbViews
+            // 
+            this.cbViews.LabelStyle = ComponentFactory.Krypton.Toolkit.LabelStyle.NormalControl;
+            this.cbViews.Location = new System.Drawing.Point(29, 21);
+            this.cbViews.Name = "cbViews";
+            this.cbViews.Size = new System.Drawing.Size(55, 20);
+            this.cbViews.TabIndex = 130;
+            this.cbViews.Text = "Views";
+            this.cbViews.Values.Text = "Views";
+            // 
+            // cbProcedures
+            // 
+            this.cbProcedures.LabelStyle = ComponentFactory.Krypton.Toolkit.LabelStyle.NormalControl;
+            this.cbProcedures.Location = new System.Drawing.Point(29, 38);
+            this.cbProcedures.Name = "cbProcedures";
+            this.cbProcedures.Size = new System.Drawing.Size(84, 20);
+            this.cbProcedures.TabIndex = 131;
+            this.cbProcedures.Text = "Procedures";
+            this.cbProcedures.Values.Text = "Procedures";
             // 
             // UIGerador
             // 
@@ -425,6 +517,10 @@ namespace UIWindows
             ((System.ComponentModel.ISupportInitialize)(this.kryptonSplitContainer1)).EndInit();
             this.kryptonSplitContainer1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
+            this.splitContainer1.Panel1.ResumeLayout(false);
+            this.splitContainer1.Panel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).EndInit();
+            this.splitContainer1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.kryptonSplitContainer2.Panel1)).EndInit();
             this.kryptonSplitContainer2.Panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.kryptonSplitContainer2.Panel2)).EndInit();
@@ -443,6 +539,8 @@ namespace UIWindows
             this.tabPesquisa.PerformLayout();
             this.tabDuplica.ResumeLayout(false);
             this.tabDuplica.PerformLayout();
+            this.tpConstraints.ResumeLayout(false);
+            this.tpConstraints.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel1)).EndInit();
             this.kryptonPanel1.ResumeLayout(false);
             this.kryptonPanel1.PerformLayout();
@@ -461,8 +559,6 @@ namespace UIWindows
         private ComponentFactory.Krypton.Toolkit.KryptonPanel btnExecTela;
         private ComponentFactory.Krypton.Toolkit.KryptonSplitContainer kryptonSplitContainer1;
         private System.Windows.Forms.Panel panel2;
-        private ComponentFactory.Krypton.Toolkit.KryptonListBox lbTabelas;
-        private ComponentFactory.Krypton.Toolkit.KryptonButton btnGerarProc;
         private ComponentFactory.Krypton.Toolkit.KryptonSplitContainer kryptonSplitContainer2;
         private System.Windows.Forms.TabControl tabControl1;
         private System.Windows.Forms.TabPage tabInsertUpdate;
@@ -480,6 +576,15 @@ namespace UIWindows
         private ComponentFactory.Krypton.Toolkit.KryptonLabel lblProcess;
         private System.Windows.Forms.ProgressBar pgProgresso;
         private ComponentFactory.Krypton.Toolkit.KryptonButton kryptonButton1;
+        private System.Windows.Forms.SplitContainer splitContainer1;
+        private ComponentFactory.Krypton.Toolkit.KryptonListBox lbTabelas;
+        private ComponentFactory.Krypton.Toolkit.KryptonCheckedListBox clBoxColunas;
+        private ComponentFactory.Krypton.Toolkit.KryptonButton btnGerarProc;
+        private System.Windows.Forms.TabPage tpConstraints;
+        private ComponentFactory.Krypton.Toolkit.KryptonTextBox txtConstraints;
+        private ComponentFactory.Krypton.Toolkit.KryptonCheckBox cbProcedures;
+        private ComponentFactory.Krypton.Toolkit.KryptonCheckBox cbViews;
+        private ComponentFactory.Krypton.Toolkit.KryptonCheckBox cbConstraints;
     }
 }
 

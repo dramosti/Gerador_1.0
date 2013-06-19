@@ -5,6 +5,7 @@ using System.Text;
 using System.Data;
 using System.Data.SqlClient;
 using Model;
+using Comum;
 
 namespace DAO
 {
@@ -204,7 +205,40 @@ namespace DAO
             {
                 return "";
             }
-        }        
+        }
+
+        public DataTable GetColunasByTabelaDao(string vNomeTabela)
+        {
+            try
+            {
+                DataTable dt = new DataTable();
+                DataBase = Static.sBase;
+                UserId = Static.sUser;
+                Senha = Static.sPassword;
+                TipoConexao = Static.bTipoConexao;
+                Servidor = Static.sServidor;
+
+                if (!isConectado())
+                {
+
+                    Conectar();
+                }
+
+                SqlDataAdapter adapter = new SqlDataAdapter("select COLUMN_NAME from INFORMATION_SCHEMA.COLUMNS"+
+                    " where TABLE_NAME = '"+vNomeTabela+"'", GetConexao());
+                adapter.Fill(dt);
+
+                return dt;
+            }
+            catch (SqlException se)
+            {
+                throw new Exception(se.Message);
+            }
+            finally
+            {
+                CloseConnection();
+            }
+        }
 
     }
 }

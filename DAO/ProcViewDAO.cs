@@ -118,6 +118,10 @@ namespace DAO
                 {
                     vprocview = vprocview.Replace("CREATE VIEW", "ALTER VIEW");
                 }
+                else if (vprocview.Contains("CREATE TRIGGER"))
+                {
+                    vprocview = vprocview.Replace("CREATE TRIGGER", "ALTER TRIGGER");
+                }
                 else
                 {
                     return;

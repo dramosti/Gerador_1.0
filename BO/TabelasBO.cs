@@ -350,23 +350,50 @@ namespace BO
                     if (_colunas[i].TipoColuna != "int identity")
                     {
                         sValues += "{0}   " + ((lConstraints.Where(c => c.sColumnName == _colunas[i].NomeColuna).Count() > 0) ?
-                            "(select top(1) "+
-                            "case "+
-                            "when LEN(t." + _colunas[i].NomeColuna + ") < ((select c.CHARACTER_MAXIMUM_LENGTH from INFORMATION_SCHEMA.COLUMNS c "+
-                            "where c.COLUMN_NAME = '" + _colunas[i].NomeColuna + "' and c.TABLE_NAME = '" + _colunas[i] .NomeTabela+ "') - 5) " +
-                            "then t." + _colunas[i].NomeColuna+"+'_copy' "+
-                            "else " + "SUBSTRING(" + _colunas[i].NomeTabela + "." + _colunas[i].NomeColuna +", "+
-                            "((LEN(" + _colunas[i].NomeTabela + "." + _colunas[i].NomeColuna + ")) - "+
-                            "(select c.CHARACTER_MAXIMUM_LENGTH from INFORMATION_SCHEMA.COLUMNS c " +
-                            "where c.COLUMN_NAME = '" + _colunas[i].NomeColuna + "' and c.TABLE_NAME = '" + _colunas[i].NomeTabela + "') + 6), " +
-                            "(select c.CHARACTER_MAXIMUM_LENGTH from INFORMATION_SCHEMA.COLUMNS c "+
-                            "where c.COLUMN_NAME = '" + _colunas[i].NomeColuna + "' and c.TABLE_NAME = '" + _colunas[i].NomeTabela + "'))+'_copy' " +
-                            "end "+                            
-                            "from "+_colunas[i].NomeTabela+" t where t."+_colunas[i].NomeColuna+
-                                " like " + _colunas[i].NomeTabela + "." + _colunas[i].NomeColuna + "+'%' " +
-                                "order by t." + _colunas[i].NomeColuna + " desc)" :
+                            "case when (select c.CHARACTER_MAXIMUM_LENGTH from INFORMATION_SCHEMA.COLUMNS c where c.COLUMN_NAME = '" + _colunas[i].NomeColuna + "'" +
+                            " and c.TABLE_NAME = '" + _colunas[i].NomeTabela + "') < 7 " +
+                            "then " +
+                            "case when ((select c.IS_NULLABLE from INFORMATION_SCHEMA.COLUMNS c where c.COLUMN_NAME = '"+_colunas[i].NomeColuna+"' "+
+                            "and c.TABLE_NAME = '"+_colunas[i].NomeTabela+"') = 'NO') "+
+                            "then "+
+                            "Reverse(SUBSTRING(Reverse(IDENT_CURRENT('"+_colunas[i].NomeTabela+ "')), 1, " +
+                            "(select c.CHARACTER_MAXIMUM_LENGTH from INFORMATION_SCHEMA.COLUMNS c where c.COLUMN_NAME = '"+_colunas[i].NomeColuna+"' "+
+                            "and c.TABLE_NAME = '"+_colunas[i].NomeTabela+"'))) "+
+                            "else "+
+	                        "null "+
+                            "end "+
+                            "else " +
+                            "case when (select count(j1." + _colunas[i].NomeColuna + ") from " + _colunas[i].NomeTabela + " j1 where j1." + _colunas[i].NomeColuna + " like 'copy_%') = 0 " +
+                            "then " +
+                            "'copy_1' " +
+                            "else " +
+                            "'copy_'+(Cast(Cast(Substring((select top(1) j2." + _colunas[i].NomeColuna + " from " + _colunas[i].NomeTabela + " j2" +
+                            " where j2." + _colunas[i].NomeColuna + " like 'copy_%' order by j2." + _colunas[i].NomeColuna + " desc), " +
+                            "PATINDEX('%copy_%', (select top(1) j3." + _colunas[i].NomeColuna + " from " + _colunas[i].NomeTabela + " j3 " +
+                            "where j3." + _colunas[i].NomeColuna + " like 'copy_%' order by j3." + _colunas[i].NomeColuna + "))+5, " +
+                            "(select c.CHARACTER_MAXIMUM_LENGTH from INFORMATION_SCHEMA.COLUMNS c where c.COLUMN_NAME = '" + _colunas[i].NomeColuna + "' " +
+                            "and c.TABLE_NAME = '" + _colunas[i].NomeTabela + "'))as int) + 1 as varchar(max))) " +
+                            "end " +
+                            "end" :
                                 _colunas[i].NomeTabela + "." + _colunas[i].NomeColuna) +
                             (_colunas.Count - i == 1 ? "" : ",");
+                            //"(select top(1) "+
+                            //"case "+
+                            //"when len(t." + _colunas[i].nomecoluna + ") < ((select c.character_maximum_length from information_schema.columns c "+
+                            //"where c.column_name = '" + _colunas[i].nomecoluna + "' and c.table_name = '" + _colunas[i] .nometabela+ "') - 5) " +
+                            //"then t." + _colunas[i].nomecoluna+"+'_copy' "+
+                            //"else " + "substring(" + _colunas[i].nometabela + "." + _colunas[i].nomecoluna +", "+
+                            //"((len(" + _colunas[i].nometabela + "." + _colunas[i].nomecoluna + ")) - "+
+                            //"(select c.character_maximum_length from information_schema.columns c " +
+                            //"where c.column_name = '" + _colunas[i].nomecoluna + "' and c.table_name = '" + _colunas[i].nometabela + "') + 6), " +
+                            //"(select c.character_maximum_length from information_schema.columns c "+
+                            //"where c.column_name = '" + _colunas[i].nomecoluna + "' and c.table_name = '" + _colunas[i].nometabela + "'))+'_copy' " +
+                            //"end "+                            
+                            //"from "+_colunas[i].nometabela+" t where t."+_colunas[i].nomecoluna+
+                            //    " like " + _colunas[i].nometabela + "." + _colunas[i].nomecoluna + "+'%' " +
+                            //    "order by t." + _colunas[i].nomecoluna + " desc)" :
+                            //    _colunas[i].nometabela + "." + _colunas[i].nomecoluna) +
+                            //(_colunas.count - i == 1 ? "" : ",");
                     }
                 }
 
@@ -519,6 +546,15 @@ namespace BO
                 default:
                     return "";
             }
+        }
+
+        public List<TabelaModel> GetColunasByTabela(string vTabela)
+        {
+            return  base.GetColunasByTabelaDao(vNomeTabela: vTabela).
+                AsEnumerable().Select(c => new TabelaModel
+                {
+                    NomeColuna = c["COLUMN_NAME"].ToString()
+                }).ToList();
         }
     }
 }
