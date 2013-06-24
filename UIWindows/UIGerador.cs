@@ -106,17 +106,10 @@ namespace UIWindows
 
         private void kryptonButton1_Click(object sender, EventArgs e)
         {
-            if(txtInsertUpdate.Text == "" && txtUpdate.Text == "" &&
-                 txtDuplicar.Text == "" && txtPesquisa.Text == "" && txtDelete.Text == ""
-                && txtConstraints.Text == "" && txtViews.Text == "")
+            SqlCommand command = null;
+            if (cbConstraints.Checked)
             {
-                MessageBox.Show("Não foram gerados códigos para serem executados.",
-                     "Atenção", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
-            }
-            else
-            {
-                SqlCommand command = null; 
-                if (cbConstraints.Checked)
+                if (txtConstraints.Text != "")
                 {
                     txtConstraints.Text.Split(';');
                     if (!objbo.isConectado())
@@ -134,146 +127,146 @@ namespace UIWindows
                         System.Threading.Thread.Sleep(50);
                     }
                     btnGerarProc_Click(this, null);
-                }           
+                }
+            }
 
-                string procInsert = String.Empty;
-                string procUpdate = String.Empty;
-                string procDelete = String.Empty;
-                string procSelect = String.Empty;
-                string procCopy = String.Empty;
-                string view = String.Empty;
+            string procInsert = String.Empty;
+            string procUpdate = String.Empty;
+            string procDelete = String.Empty;
+            string procSelect = String.Empty;
+            string procCopy = String.Empty;
+            string view = String.Empty;
 
-                procInsert = txtInsertUpdate.Text;
-                procUpdate = txtUpdate.Text;
-                procDelete = txtDelete.Text;
-                procSelect = txtPesquisa.Text;
-                procCopy = txtDuplicar.Text;
-                view = txtViews.Text;
+            procInsert = txtInsertUpdate.Text;
+            procUpdate = txtUpdate.Text;
+            procDelete = txtDelete.Text;
+            procSelect = txtPesquisa.Text;
+            procCopy = txtDuplicar.Text;
+            view = txtViews.Text;
 
-                pgProgresso.Value = 0;
-                pgProgresso.Minimum = 0;
-                pgProgresso.Maximum = (cbViews.Checked ? + 1 : + 0) +
-                    (cbProcedures.Checked ? + 5 : +0) + txtConstraints.Text.Count(c => c == ';');
-                pgProgresso.Step = 1;
+            pgProgresso.Value = 0;
+            pgProgresso.Minimum = 0;
+            pgProgresso.Maximum = (cbViews.Checked ? +1 : +0) +
+                (cbProcedures.Checked ? +5 : +0) + txtConstraints.Text.Count(c => c == ';');
+            pgProgresso.Step = 1;
 
-                try
+            try
+            {
+                if (cbProcedures.Checked)
                 {
-                    if (cbProcedures.Checked)
+                    string sNameProcInsert = objbo.GetNameProc(TabelasBO.tipoProc.SAVE);
+                    if (ProcExiste(sNameProcInsert))
                     {
-                        string sNameProcInsert = objbo.GetNameProc(TabelasBO.tipoProc.SAVE);
-                        if (ProcExiste(sNameProcInsert))
-                        {
-                            procInsert = procInsert.Replace("CREATE", "ALTER");
-                        }
-                        pgProgresso.PerformStep();
-                        System.Threading.Thread.Sleep(50);
+                        procInsert = procInsert.Replace("CREATE", "ALTER");
+                    }
+                    pgProgresso.PerformStep();
+                    System.Threading.Thread.Sleep(50);
 
-                        string sNameProcUpdate = objbo.GetNameProc(TabelasBO.tipoProc.UPDATE);
-                        if (ProcExiste(sNameProcUpdate))
-                        {
-                            procUpdate = procUpdate.Replace("CREATE", "ALTER");
-                        }
-                        pgProgresso.PerformStep();
-                        System.Threading.Thread.Sleep(50);
+                    string sNameProcUpdate = objbo.GetNameProc(TabelasBO.tipoProc.UPDATE);
+                    if (ProcExiste(sNameProcUpdate))
+                    {
+                        procUpdate = procUpdate.Replace("CREATE", "ALTER");
+                    }
+                    pgProgresso.PerformStep();
+                    System.Threading.Thread.Sleep(50);
 
-                        string sNameProcDelete = objbo.GetNameProc(TabelasBO.tipoProc.DELETE);
-                        if (ProcExiste(sNameProcDelete))
-                        {
-                            procDelete = procDelete.Replace("CREATE", "ALTER");
-                        }
-                        pgProgresso.PerformStep();
-                        System.Threading.Thread.Sleep(50);
+                    string sNameProcDelete = objbo.GetNameProc(TabelasBO.tipoProc.DELETE);
+                    if (ProcExiste(sNameProcDelete))
+                    {
+                        procDelete = procDelete.Replace("CREATE", "ALTER");
+                    }
+                    pgProgresso.PerformStep();
+                    System.Threading.Thread.Sleep(50);
 
-                        string sNameProcSelect = objbo.GetNameProc(TabelasBO.tipoProc.SEL);
-                        if (ProcExiste(sNameProcSelect))
-                        {
-                            procSelect = procSelect.Replace("CREATE", "ALTER");
-                        }
-                        pgProgresso.PerformStep();
-                        System.Threading.Thread.Sleep(50);
+                    string sNameProcSelect = objbo.GetNameProc(TabelasBO.tipoProc.SEL);
+                    if (ProcExiste(sNameProcSelect))
+                    {
+                        procSelect = procSelect.Replace("CREATE", "ALTER");
+                    }
+                    pgProgresso.PerformStep();
+                    System.Threading.Thread.Sleep(50);
 
-                        string sNameProcCopy = objbo.GetNameProc(TabelasBO.tipoProc.COPY);
-                        if (ProcExiste(sNameProcCopy))
-                        {
-                            procCopy = procCopy.Replace("CREATE", "ALTER");
-                        }
-                        pgProgresso.PerformStep();
-                        System.Threading.Thread.Sleep(50);
+                    string sNameProcCopy = objbo.GetNameProc(TabelasBO.tipoProc.COPY);
+                    if (ProcExiste(sNameProcCopy))
+                    {
+                        procCopy = procCopy.Replace("CREATE", "ALTER");
+                    }
+                    pgProgresso.PerformStep();
+                    System.Threading.Thread.Sleep(50);
 
 
 
-                        pgProgresso.PerformStep();
-                        System.Threading.Thread.Sleep(50);
+                    pgProgresso.PerformStep();
+                    System.Threading.Thread.Sleep(50);
 
-                        procInsert = procInsert.Replace(";", "");
-                        procUpdate = procUpdate.Replace(";", "");
-                        procDelete = procDelete.Replace(";", "");
-                        procSelect = procSelect.Replace(";", "");
-                        procCopy = procCopy.Replace(";", "");
+                    procInsert = procInsert.Replace(";", "");
+                    procUpdate = procUpdate.Replace(";", "");
+                    procDelete = procDelete.Replace(";", "");
+                    procSelect = procSelect.Replace(";", "");
+                    procCopy = procCopy.Replace(";", "");
 
+                    if (!objbo.isConectado())
+                    {
+                        objbo.Conectar();
+                    }
+
+                    command = new SqlCommand(procInsert, objbo.GetConexao());
+                    command.ExecuteNonQuery();
+                    pgProgresso.PerformStep();
+                    System.Threading.Thread.Sleep(100);
+
+                    command = new SqlCommand(procUpdate, objbo.GetConexao());
+                    command.ExecuteNonQuery();
+                    pgProgresso.PerformStep();
+                    System.Threading.Thread.Sleep(100);
+
+                    command = new SqlCommand(procDelete, objbo.GetConexao());
+                    command.ExecuteNonQuery();
+                    pgProgresso.PerformStep();
+                    System.Threading.Thread.Sleep(100);
+
+                    command = new SqlCommand(procSelect, objbo.GetConexao());
+                    command.ExecuteNonQuery();
+                    pgProgresso.PerformStep();
+                    System.Threading.Thread.Sleep(100);
+
+                    command = new SqlCommand(procCopy, objbo.GetConexao());
+                    command.ExecuteNonQuery();
+                    pgProgresso.PerformStep();
+                    System.Threading.Thread.Sleep(100);
+                }
+
+                if (cbViews.Checked)
+                {
+                    string nmView = objbo.nmView;
+                    if (ProcExiste(nmView))
+                    {
+                        view = view.Replace("CREATE", "ALTER");
+                    }
+
+                    if (view != "")
+                    {
                         if (!objbo.isConectado())
                         {
                             objbo.Conectar();
                         }
-
-                        command = new SqlCommand(procInsert, objbo.GetConexao());
-                        command.ExecuteNonQuery();
-                        pgProgresso.PerformStep();
-                        System.Threading.Thread.Sleep(100);
-
-                        command = new SqlCommand(procUpdate, objbo.GetConexao());
-                        command.ExecuteNonQuery();
-                        pgProgresso.PerformStep();
-                        System.Threading.Thread.Sleep(100);
-
-                        command = new SqlCommand(procDelete, objbo.GetConexao());
-                        command.ExecuteNonQuery();
-                        pgProgresso.PerformStep();
-                        System.Threading.Thread.Sleep(100);
-
-                        command = new SqlCommand(procSelect, objbo.GetConexao());
-                        command.ExecuteNonQuery();
-                        pgProgresso.PerformStep();
-                        System.Threading.Thread.Sleep(100);
-
-                        command = new SqlCommand(procCopy, objbo.GetConexao());
+                        command = new SqlCommand(view, objbo.GetConexao());
                         command.ExecuteNonQuery();
                         pgProgresso.PerformStep();
                         System.Threading.Thread.Sleep(100);
                     }
-
-                    if(cbViews.Checked)
-                    {
-                        string nmView = objbo.nmView;
-                        if (ProcExiste(nmView))
-                        {
-                            view = view.Replace("CREATE", "ALTER");
-                        }
-
-                        if(view != "")
-                        {
-                            if (!objbo.isConectado())
-                            {
-                                objbo.Conectar();
-                            }
-                            command = new SqlCommand(view, objbo.GetConexao());                        
-                            command.ExecuteNonQuery();
-                            pgProgresso.PerformStep();
-                            System.Threading.Thread.Sleep(100);
-                        }  
-                    }
-                
-
                 }
-                catch (Exception ex)
-                {
-                    KryptonMessageBox.Show(null, "Erro de sintaxe ao executar:  \n\n" + ex.Message, "E R R O", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                }
-                finally
-                {
-                    objbo.CloseConnection();
-                    pgProgresso.Value = 0;
-                }
+
+
+            }
+            catch (Exception ex)
+            {
+                KryptonMessageBox.Show(null, "Erro de sintaxe ao executar:  \n\n" + ex.Message, "E R R O", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            finally
+            {
+                objbo.CloseConnection();
+                pgProgresso.Value = 0;
             }
         }
 
