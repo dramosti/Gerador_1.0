@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<configuration>
+  <configSections>
+  </configSections>
+  <connectionStrings>
+    <add name="PROD_MODULOSEntities" connectionString="metadata=res://*/Model1.csdl|res://*/Model1.ssdl|res://*/Model1.msl;provider=System.Data.SqlClient;provider connection string=&quot;data source=HLPSRV;initial catalog=PROD_MODULOS;persist security info=True;user id=sa;password=H029060tSql;multipleactiveresultsets=True;App=EntityFramework&quot;" providerName="System.Data.EntityClient"/>
+    <add name="UIWindows.Properties.Settings.PROD_MODULOSConnectionString" connectionString="Data Source=HLPSRV;Initial Catalog=PROD_MODULOS;Persist Security Info=True;User ID=sa;Password=H029060tSql" providerName="System.Data.SqlClient"/>
+    <add name="ctxModulos" connectionString="metadata=res://*/ctxModulos.csdl|res://*/ctxModulos.ssdl|res://*/ctxModulos.msl;provider=System.Data.SqlClient;provider connection string=&quot;data source=HLPSRV;initial catalog=PROD_MODULOS;persist security info=True;user id=sa;password=H029060tSql;multipleactiveresultsets=True;App=EntityFramework&quot;" providerName="System.Data.EntityClient" />
+    <add name="ctxFormularios" connectionString="metadata=res://*/vwForms.csdl|res://*/vwForms.ssdl|res://*/vwForms.msl;provider=System.Data.SqlClient;provider connection string=&quot;data source=HLPSRV;initial catalog=PROD_MODULOS;persist security info=True;user id=sa;password=H029060tSql;multipleactiveresultsets=True;App=EntityFramework&quot;" providerName="System.Data.EntityClient" />
+  </connectionStrings>
+<startup><supportedRuntime version="v4.0" sku=".NETFramework,Version=v4.0"/></startup></configuration>

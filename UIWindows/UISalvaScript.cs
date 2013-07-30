@@ -497,7 +497,15 @@ namespace UIWindows
                         _scriptPronto += _script[_count] + Environment.NewLine;
                         _count++;
                     }
-                    _objProcBO.ExecutarProcView(_scriptPronto, _fi.Name.Replace(".sql", ""));
+                    try
+                    {
+                        _objProcBO.ExecutarProcView(_scriptPronto, _fi.Name.Replace(".sql", ""));
+                    }
+                    catch (Exception ex)
+                    {
+                        MessageBox.Show("Erro ao executar o script " + _fi.Name + Environment.NewLine + "." +
+                            "Erro: " + ex.Message);
+                    }                    
                 }
                 pbGeral.Value++;
             }
