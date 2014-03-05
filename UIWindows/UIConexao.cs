@@ -45,22 +45,28 @@ namespace UIWindows
         private void CarregaInstancias()
         {
             tbo = new TabelasBO();
-            foreach (string item in tbo.GetServidores())
+            this.Invoke(new MethodInvoker(delegate()
             {
-                try
-                {
-                    this.Invoke(new MethodInvoker(delegate()
-                    {
-                        cbxServidor.Items.Add(item);
-                        cbxServidor.Text = "HLPSRV";
-                        btnTestarCon.Enabled = true;
-                        cbxDatabase.Enabled = true;
-                    }
-                    ));
-                }
-                catch (Exception) { this.Dispose(); }
-                
-            }           
+                cbxServidor.Text = "HLPSRV";
+                btnTestarCon.Enabled = true;
+                cbxDatabase.Enabled = true;
+            }));
+            //foreach (string item in tbo.GetServidores())
+            //{
+            //    try
+            //    {
+            //        this.Invoke(new MethodInvoker(delegate()
+            //        {
+            //            cbxServidor.Items.Add(item);
+            //            cbxServidor.Text = "HLPSRV";
+            //            btnTestarCon.Enabled = true;
+            //            cbxDatabase.Enabled = true;
+            //        }
+            //        ));
+            //    }
+            //    catch (Exception) { this.Dispose(); }
+
+            //}           
         }
 
         private void cbxDatabase_Enter(object sender, EventArgs e)
@@ -170,7 +176,7 @@ namespace UIWindows
             }
             catch (Exception ex)
             {
-                KryptonMessageBox.Show(null, "Falha na conexão: \n" +ex.Message, "E R R O", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                KryptonMessageBox.Show(null, "Falha na conexão: \n" + ex.Message, "E R R O", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             finally
             {

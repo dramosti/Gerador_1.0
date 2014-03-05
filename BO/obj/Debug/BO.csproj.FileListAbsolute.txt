@@ -54,3 +54,14 @@ D:\GitHub\HLP\Gerador_1.0\BO\obj\Debug\BO.dll
 D:\GitHub\HLP\Gerador_1.0\BO\obj\Debug\BO.pdb
 D:\GitHub\HLP\Gerador_1.0\BO\bin\Debug\Comum.dll
 D:\GitHub\HLP\Gerador_1.0\BO\bin\Debug\Comum.pdb
+D:\GitHub\Gerador_1.0\BO\bin\Debug\BO.dll
+D:\GitHub\Gerador_1.0\BO\bin\Debug\BO.pdb
+D:\GitHub\Gerador_1.0\BO\bin\Debug\DAO.dll
+D:\GitHub\Gerador_1.0\BO\bin\Debug\Model.dll
+D:\GitHub\Gerador_1.0\BO\bin\Debug\Comum.dll
+D:\GitHub\Gerador_1.0\BO\bin\Debug\DAO.pdb
+D:\GitHub\Gerador_1.0\BO\bin\Debug\Model.pdb
+D:\GitHub\Gerador_1.0\BO\bin\Debug\Comum.pdb
+D:\GitHub\Gerador_1.0\BO\obj\Debug\BO.csprojResolveAssemblyReference.cache
+D:\GitHub\Gerador_1.0\BO\obj\Debug\BO.dll
+D:\GitHub\Gerador_1.0\BO\obj\Debug\BO.pdb

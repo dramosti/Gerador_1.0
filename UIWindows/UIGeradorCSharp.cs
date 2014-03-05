@@ -168,11 +168,16 @@ namespace UIWindows
 
             RepositoryNormal repNrml = new RepositoryNormal(TabPai, PkPai);
             txtPaiRepository.Text = repNrml.Inject() + repNrml.Save() + repNrml.Delete() + repNrml.Copy() + repNrml.Get() + repNrml.GetAll();
-            
+
             ServiceNormal servNrml = new ServiceNormal(TabPai, PkPai);
             txtPaiService.Text = servNrml.Inject() + servNrml.Save() + servNrml.Delete() + servNrml.Copy() + servNrml.Get() + servNrml.GetAll();
 
-            if (cbParameterOrder.Enabled)
+            if (cbPropertyChanged.Checked)
+            {
+                txtPaiModel.Text = objbo.GerarPropriedadesWithINotifyPropertyChanged(TabPai,
+                    tbFilho: false, bParameterOrder: cbParameterOrder.Checked);
+            }
+            else if (cbParameterOrder.Checked)
             {
                 txtPaiModel.Text = objbo.GerarPropriedadesWithOrder(TabPai, false);
             }

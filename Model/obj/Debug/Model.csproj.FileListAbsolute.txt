@@ -25,3 +25,8 @@ D:\GitHub\HLP\Gerador_1.0\Model\bin\Debug\Model.pdb
 D:\GitHub\HLP\Gerador_1.0\Model\obj\Debug\Model.dll
 D:\GitHub\HLP\Gerador_1.0\Model\obj\Debug\Model.pdb
 D:\GitHub\HLP\Gerador_1.0\Model\obj\Debug\Model.csprojResolveAssemblyReference.cache
+D:\GitHub\Gerador_1.0\Model\bin\Debug\Model.dll
+D:\GitHub\Gerador_1.0\Model\bin\Debug\Model.pdb
+D:\GitHub\Gerador_1.0\Model\obj\Debug\Model.csprojResolveAssemblyReference.cache
+D:\GitHub\Gerador_1.0\Model\obj\Debug\Model.dll
+D:\GitHub\Gerador_1.0\Model\obj\Debug\Model.pdb

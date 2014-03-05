@@ -47,6 +47,7 @@ namespace UIWindows
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.selecionarTabelasFilhaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.btnGerarProc = new ComponentFactory.Krypton.Toolkit.KryptonButton();
+            this.cbPropertyChanged = new ComponentFactory.Krypton.Toolkit.KryptonCheckBox();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonPanel)).BeginInit();
             this.kryptonPanel.SuspendLayout();
             this.tabModels.SuspendLayout();
@@ -190,6 +191,7 @@ namespace UIWindows
             this.panel2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left)));
             this.panel2.BackColor = System.Drawing.Color.Transparent;
+            this.panel2.Controls.Add(this.cbPropertyChanged);
             this.panel2.Controls.Add(this.cbParameterOrder);
             this.panel2.Controls.Add(this.lbTabelas);
             this.panel2.Controls.Add(this.btnGerarProc);
@@ -219,7 +221,7 @@ namespace UIWindows
             this.lbTabelas.ContextMenuStrip = this.contextMenuStrip1;
             this.lbTabelas.Location = new System.Drawing.Point(3, 3);
             this.lbTabelas.Name = "lbTabelas";
-            this.lbTabelas.Size = new System.Drawing.Size(209, 446);
+            this.lbTabelas.Size = new System.Drawing.Size(209, 402);
             this.lbTabelas.TabIndex = 1;
             // 
             // contextMenuStrip1
@@ -247,6 +249,17 @@ namespace UIWindows
             this.btnGerarProc.TabIndex = 2;
             this.btnGerarProc.Values.Text = "&Gerar Códigos";
             this.btnGerarProc.Click += new System.EventHandler(this.btnGerarProc_Click);
+            // 
+            // cbPropertyChanged
+            // 
+            this.cbPropertyChanged.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.cbPropertyChanged.LabelStyle = ComponentFactory.Krypton.Toolkit.LabelStyle.NormalControl;
+            this.cbPropertyChanged.Location = new System.Drawing.Point(3, 429);
+            this.cbPropertyChanged.Name = "cbPropertyChanged";
+            this.cbPropertyChanged.Size = new System.Drawing.Size(156, 20);
+            this.cbPropertyChanged.TabIndex = 111;
+            this.cbPropertyChanged.Text = "INotifyPropertyChanged";
+            this.cbPropertyChanged.Values.Text = "INotifyPropertyChanged";
             // 
             // UIGeradorCSharp
             // 
@@ -297,6 +310,7 @@ namespace UIWindows
         private System.Windows.Forms.TabControl tabModels;
         private System.Windows.Forms.TabPage tabPage3;
         private ComponentFactory.Krypton.Toolkit.KryptonTextBox txtPaiModel;
+        private ComponentFactory.Krypton.Toolkit.KryptonCheckBox cbPropertyChanged;
     }
 }
 
