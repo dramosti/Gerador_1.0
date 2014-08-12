@@ -349,7 +349,8 @@ namespace BO
                 {
                     if (_colunas[i].TipoColuna != "int identity")
                     {
-                        sValues += "{0}   " + ((lConstraints.Where(c => c.sColumnName == _colunas[i].NomeColuna).Count() > 0) ?
+                        sValues += "{0}   "
+                            + ((lConstraints.Where(c => c.sColumnName == _colunas[i].NomeColuna).Count() > 0) ?
                             "case when (select c.CHARACTER_MAXIMUM_LENGTH from INFORMATION_SCHEMA.COLUMNS c where c.COLUMN_NAME = '" + _colunas[i].NomeColuna + "'" +
                             " and c.TABLE_NAME = '" + _colunas[i].NomeTabela + "') < 7 " +
                             "then " +
@@ -377,23 +378,6 @@ namespace BO
                             "end" :
                                 _colunas[i].NomeTabela + "." + _colunas[i].NomeColuna) +
                             (_colunas.Count - i == 1 ? "" : ",");
-                        //"(select top(1) "+
-                        //"case "+
-                        //"when len(t." + _colunas[i].nomecoluna + ") < ((select c.character_maximum_length from information_schema.columns c "+
-                        //"where c.column_name = '" + _colunas[i].nomecoluna + "' and c.table_name = '" + _colunas[i] .nometabela+ "') - 5) " +
-                        //"then t." + _colunas[i].nomecoluna+"+'_copy' "+
-                        //"else " + "substring(" + _colunas[i].nometabela + "." + _colunas[i].nomecoluna +", "+
-                        //"((len(" + _colunas[i].nometabela + "." + _colunas[i].nomecoluna + ")) - "+
-                        //"(select c.character_maximum_length from information_schema.columns c " +
-                        //"where c.column_name = '" + _colunas[i].nomecoluna + "' and c.table_name = '" + _colunas[i].nometabela + "') + 6), " +
-                        //"(select c.character_maximum_length from information_schema.columns c "+
-                        //"where c.column_name = '" + _colunas[i].nomecoluna + "' and c.table_name = '" + _colunas[i].nometabela + "'))+'_copy' " +
-                        //"end "+                            
-                        //"from "+_colunas[i].nometabela+" t where t."+_colunas[i].nomecoluna+
-                        //    " like " + _colunas[i].nometabela + "." + _colunas[i].nomecoluna + "+'%' " +
-                        //    "order by t." + _colunas[i].nomecoluna + " desc)" :
-                        //    _colunas[i].nometabela + "." + _colunas[i].nomecoluna) +
-                        //(_colunas.count - i == 1 ? "" : ",");
                     }
                 }
 

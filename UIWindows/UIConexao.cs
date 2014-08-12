@@ -45,29 +45,29 @@ namespace UIWindows
         private void CarregaInstancias()
         {
             //Para testes descomentar as linhas abaixo e comentar a rotina dentro do foreach
-            //tbo = new TabelasBO();
-            //this.Invoke(new MethodInvoker(delegate()
-            //{
-            //    cbxServidor.Text = "HLPSRV";
-            //    btnTestarCon.Enabled = true;
-            //    cbxDatabase.Enabled = true;
-            //}));
-            foreach (string item in tbo.GetServidores())
+            tbo = new TabelasBO();
+            this.Invoke(new MethodInvoker(delegate()
             {
-                try
-                {
-                    this.Invoke(new MethodInvoker(delegate()
-                    {
-                        cbxServidor.Items.Add(item);
-                        cbxServidor.Text = "HLPSRV";
-                        btnTestarCon.Enabled = true;
-                        cbxDatabase.Enabled = true;
-                    }
-                    ));
-                }
-                catch (Exception) { this.Dispose(); }
+                cbxServidor.Text = @"HLPSRV\SQLSERVER14";
+                btnTestarCon.Enabled = true;
+                cbxDatabase.Enabled = true;
+            }));
+            //foreach (string item in tbo.GetServidores())
+            //{
+            //    try
+            //    {
+            //        this.Invoke(new MethodInvoker(delegate()
+            //        {
+            //            cbxServidor.Items.Add(item);
+            //            cbxServidor.Text = "HLPSRV";
+            //            btnTestarCon.Enabled = true;
+            //            cbxDatabase.Enabled = true;
+            //        }
+            //        ));
+            //    }
+            //    catch (Exception) { this.Dispose(); }
 
-            }           
+            //}           
         }
 
         private void cbxDatabase_Enter(object sender, EventArgs e)

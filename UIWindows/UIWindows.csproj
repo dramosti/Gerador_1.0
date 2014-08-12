@@ -15,7 +15,7 @@
     </TargetFrameworkProfile>
     <FileAlignment>512</FileAlignment>
     <IsWebBootstrapper>false</IsWebBootstrapper>
-    <PublishUrl>\\192.168.9.100\g\CSharp\Desenvolvimento\Projetos\Gerador_de_Codigo\GeradorProcedure\</PublishUrl>
+    <PublishUrl>\\Hlpsrv\g\CSharp\Desenvolvimento\Projetos\Gerador_de_Codigo\GeradorProcedure\</PublishUrl>
     <Install>true</Install>
     <InstallFrom>Unc</InstallFrom>
     <UpdateEnabled>true</UpdateEnabled>
@@ -25,8 +25,9 @@
     <UpdatePeriodically>false</UpdatePeriodically>
     <UpdateRequired>false</UpdateRequired>
     <MapFileExtensions>true</MapFileExtensions>
-    <InstallUrl>\\192.168.9.100\g\CSharp\Desenvolvimento\Projetos\Gerador_de_Codigo\GeradorProcedure\</InstallUrl>
-    <ApplicationRevision>17</ApplicationRevision>
+    <CreateWebPageOnPublish>true</CreateWebPageOnPublish>
+    <WebPage>publish.htm</WebPage>
+    <ApplicationRevision>18</ApplicationRevision>
     <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
     <PublishWizardCompleted>true</PublishWizardCompleted>
@@ -52,10 +53,10 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <ManifestCertificateThumbprint>F39202272384B48B45615B1FB3FEDC2D893E911A</ManifestCertificateThumbprint>
+    <ManifestCertificateThumbprint>A96716FC0042336D3B2C7FA60151681739767CFE</ManifestCertificateThumbprint>
   </PropertyGroup>
   <PropertyGroup>
-    <ManifestKeyFile>UIWindows_1_TemporaryKey.pfx</ManifestKeyFile>
+    <ManifestKeyFile>UIWindows_4_TemporaryKey.pfx</ManifestKeyFile>
   </PropertyGroup>
   <PropertyGroup>
     <GenerateManifests>true</GenerateManifests>
@@ -245,6 +246,9 @@
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
     <None Include="UIWindows_1_TemporaryKey.pfx" />
+    <None Include="UIWindows_2_TemporaryKey.pfx" />
+    <None Include="UIWindows_3_TemporaryKey.pfx" />
+    <None Include="UIWindows_4_TemporaryKey.pfx" />
     <None Include="UIWindows_TemporaryKey.pfx" />
   </ItemGroup>
   <ItemGroup>
